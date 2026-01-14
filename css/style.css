@@ -44,3 +44,32 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", sans-seri
 .car-card { border: none; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border-radius: 15px; overflow: hidden; background: #fff; }
 .car-specs li { margin-bottom: 10px; color: #555; }
 .car-specs li strong { color: var(--gold); margin-right: 10px; }
+
+/* 新增样式 */
+.py-5 { padding-top: 5rem !important; padding-bottom: 5rem !important; }
+
+/* 图标库（建议在HTML head中引入 bootstrap-icons） */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
+
+/* 预订流程步骤样式 */
+#process .col-md-3 {
+    position: relative;
+    padding: 20px;
+    font-weight: bold;
+    color: #333;
+}
+#process .col-md-3:not(:last-child)::after {
+    content: '→';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gold);
+    font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+    #process .col-md-3:not(:last-child)::after { content: '↓'; right: 50%; top: auto; bottom: -10px; transform: translateX(50%); }
+}
+
+footer { font-size: 0.9rem; }
+footer h5 { font-size: 1.1rem; letter-spacing: 1px; }
