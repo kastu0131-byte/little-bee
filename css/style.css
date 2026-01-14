@@ -1,26 +1,46 @@
-/* 自定义配色变量 */
 :root {
-    --bee-yellow: #FFC107; /* 标志性黄色 */
-    --luxury-black: #121212; /* 高级黑 */
-    --text-grey: #666;
+    --gold: #D4AF37; /* 香槟金，比纯黄更高级 */
+    --black: #000000;
+    --dark-overlay: rgba(0, 0, 0, 0.6); /* 图片遮罩，保证文字清晰 */
 }
 
-/* 导航栏样式 */
+body { font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", sans-serif; background-color: #f9f9f9; }
+
+/* --- 导航栏 (透明悬浮) --- */
 .navbar {
-    background-color: rgba(18, 18, 18, 0.95) !important;
-    backdrop-filter: blur(10px);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent) !important; /* 渐变黑 */
+    padding: 20px 0;
+    transition: all 0.3s;
 }
-.navbar-brand { color: var(--bee-yellow) !important; font-weight: 800; letter-spacing: 1px; }
-.nav-link { color: #fff !important; font-size: 0.9rem; margin-left: 15px; }
-.nav-link:hover { color: var(--bee-yellow) !important; }
+.navbar-brand { font-weight: 800; letter-spacing: 2px; color: var(--gold) !important; font-size: 1.5rem; }
+.nav-link { color: rgba(255,255,255,0.8) !important; font-weight: 500; margin-left: 15px; text-transform: uppercase; font-size: 0.9rem; }
+.nav-link.active, .nav-link:hover { color: #fff !important; border-bottom: 2px solid var(--gold); }
+.btn-lang { border: 1px solid rgba(255,255,255,0.3); border-radius: 20px; padding: 5px 15px !important; }
 
-/* 幻灯片文字 */
-.slide-title { color: var(--bee-yellow); font-size: 3rem; font-weight: bold; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
-
-/* 车型卡片 */
-.car-card {
-    border: none;
-    transition: transform 0.3s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+/* --- 轮播图 (全屏霸气) --- */
+.swiper { width: 100%; height: 100vh; /* 强制占满全屏 */ }
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
-.car-card:hover { transform: translateY(-10px); }
+/* 给图片加一层黑膜，防止字看不清 */
+.swiper-slide::before {
+    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: var(--dark-overlay);
+}
+.hero-content {
+    position: relative; z-index: 2; height: 100%;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    text-align: center; color: white; padding: 0 20px;
+}
+.hero-title { font-size: 3.5rem; font-weight: 700; margin-bottom: 1rem; letter-spacing: 2px; }
+.hero-subtitle { font-size: 1.2rem; font-weight: 300; letter-spacing: 1px; color: var(--gold); }
+
+/* --- 车型卡片 (悬浮感) --- */
+.section-title { position: relative; display: inline-block; padding-bottom: 15px; margin-bottom: 50px; }
+.section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background: var(--gold); }
+
+.car-card { border: none; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border-radius: 15px; overflow: hidden; background: #fff; }
+.car-specs li { margin-bottom: 10px; color: #555; }
+.car-specs li strong { color: var(--gold); margin-right: 10px; }
