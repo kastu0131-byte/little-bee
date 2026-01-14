@@ -44,7 +44,24 @@ body {
 .car-card { border: none; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border-radius: 15px; overflow: hidden; background: #fff; }
 .car-specs li { margin-bottom: 10px; color: #555; }
 .car-specs li strong { color: var(--gold); margin-right: 10px; }
-
+.car-gallery {
+    transition: transform 0.5s ease;
+}
+.car-gallery img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+.spec-table {
+    border-left: 4px solid var(--gold);
+}
+.spec-table strong {
+    color: var(--black);
+}
+.badge {
+    letter-spacing: 1px;
+    padding: 8px 12px;
+}
 /* --- 预订流程样式 (使用新片段的优化版本) --- */
 #process .col-md-3 { position: relative; font-weight: bold; }
 #process .col-md-3:not(:last-child)::after { 

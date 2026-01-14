@@ -39,7 +39,12 @@ const i18nData = {
         footer_about: "关于 LITTLE BEE",
         footer_desc: "立足大阪，专注关西。提供最高标准、合法合规的华人包车与接送服务。",
         footer_contact: "联系方式",
-        footer_company: "会社概要"
+        footer_company: "会社概要",
+        fleet_page_title: "旗舰车队",
+        fleet_page_sub: "全线日本绿牌营业车，尊享顶奢出行体验",
+        granace_desc: "丰田顶级商务MPV，拥有超越埃尔法的车内空间，配备4座超宽航空按摩座椅，是长途商旅的首选。",
+        alphard_desc: "全日本最畅销的高端商旅车，以其出色的静谧性和舒适的底盘调校闻名，适合家庭出游及城市穿梭。",
+        btn_book_now: "立即预约"
     },
     jp: {
         logo: "LITTLE BEE",
@@ -73,7 +78,12 @@ const i18nData = {
         footer_about: "LITTLE BEEについて",
         footer_desc: "大阪に拠点を置き、関西全域で最高水準の送迎サービスを提供。",
         footer_contact: "連絡先",
-        footer_company: "会社概要"
+        footer_company: "会社概要",
+        fleet_page_title: "車両ラインナップ",
+        fleet_page_sub: "全車緑ナンバー。プレミアムな移動体験を。",
+        granace_desc: "トヨタの最高級送迎車。アルファードを超える広大な室内空間と4つの独立したマッサージシートを完備。",
+        alphard_desc: "日本で最も愛される高級ミニバン。その静粛性と乗り心地の良さは、ビジネスや家族旅行に最適です。",
+        btn_book_now: "今すぐ予約"
     }
 };
 
