@@ -1,0 +1,26 @@
+/* 自定义配色变量 */
+:root {
+    --bee-yellow: #FFC107; /* 标志性黄色 */
+    --luxury-black: #121212; /* 高级黑 */
+    --text-grey: #666;
+}
+
+/* 导航栏样式 */
+.navbar {
+    background-color: rgba(18, 18, 18, 0.95) !important;
+    backdrop-filter: blur(10px);
+}
+.navbar-brand { color: var(--bee-yellow) !important; font-weight: 800; letter-spacing: 1px; }
+.nav-link { color: #fff !important; font-size: 0.9rem; margin-left: 15px; }
+.nav-link:hover { color: var(--bee-yellow) !important; }
+
+/* 幻灯片文字 */
+.slide-title { color: var(--bee-yellow); font-size: 3rem; font-weight: bold; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+
+/* 车型卡片 */
+.car-card {
+    border: none;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.car-card:hover { transform: translateY(-10px); }
