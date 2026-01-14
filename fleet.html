@@ -60,7 +60,7 @@
                         <strong class="text-dark" data-i18n="granace_len">5,300 mm (宽体机)</strong>
                     </div>
                 </div>
-                <a href="#" class="btn btn-dark btn-lg w-100 mt-4" data-i18n="btn_book_now">立即预约</a>
+                <button type="button" class="btn btn-dark btn-lg w-100 mt-4" data-bs-toggle="modal" data-bs-target="#bookingModal" data-i18n="btn_book_now">立即预约</button>
             </div>
         </section>
 
@@ -90,11 +90,52 @@
                         <strong class="text-dark">★★★★★</strong>
                     </div>
                 </div>
-                <a href="#" class="btn btn-outline-dark btn-lg w-100 mt-4" data-i18n="btn_book_now">立即预约</a>
+                <button type="button" class="btn btn-dark btn-lg w-100 mt-4" data-bs-toggle="modal" data-bs-target="#bookingModal" data-i18n="btn_book_now">立即预约</button>
             </div>
         </section>
 
     </main>
+
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title" data-i18n="modal_title">立即预约咨询</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <form action="https://formspree.io/f/YOUR_ID" method="POST">
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold" data-i18n="form_name">您的姓名</label>
+                        <input type="text" name="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold" data-i18n="form_contact">联系方式 (微信/Line/电话)</label>
+                        <input type="text" name="contact" class="form-control" required>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label class="form-label small fw-bold" data-i18n="form_date">用车日期</label>
+                            <input type="date" name="date" class="form-control" required>
+                        </div>
+                        <div class="col">
+                            <label class="form-label small fw-bold" data-i18n="form_car">预订车型</label>
+                            <select name="car" class="form-select">
+                                <option value="Granace">Toyota Granace</option>
+                                <option value="Alphard">Toyota Alphard</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold" data-i18n="form_msg">备注需求</label>
+                        <textarea name="message" class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning w-100 fw-bold" data-i18n="form_submit">提交预约</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
     <script src="js/main.js"></script>
 </body>

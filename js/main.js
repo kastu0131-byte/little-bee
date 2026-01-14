@@ -1,9 +1,12 @@
-// 1. 初始化 Swiper
-var swiper = new Swiper(".mySwiper", {
-    loop: true, speed: 1000, autoplay: { delay: 5000 },
-    pagination: { el: ".swiper-pagination", clickable: true },
-    effect: "fade"
-});
+if (document.querySelector(".mySwiper")) {
+    var swiper = new Swiper(".mySwiper", {
+        loop: true, 
+        speed: 1000, 
+        autoplay: { delay: 5000 },
+        pagination: { el: ".swiper-pagination", clickable: true },
+        effect: "fade"
+    });
+}
 
 // 2. 翻译数据库
 const i18nData = {
@@ -44,7 +47,14 @@ const i18nData = {
         fleet_page_sub: "全线日本绿牌营业车，尊享顶奢出行体验",
         granace_desc: "丰田顶级商务MPV，拥有超越埃尔法的车内空间，配备4座超宽航空按摩座椅，是长途商旅的首选。",
         alphard_desc: "全日本最畅销的高端商旅车，以其出色的静谧性和舒适的底盘调校闻名，适合家庭出游及城市穿梭。",
-        btn_book_now: "立即预约"
+        btn_book_now: "立即预约",
+        modal_title: "立即预约咨询",
+        form_name: "您的姓名",
+        form_contact: "联系方式 (微信/Line/电话)",
+        form_date: "用车日期",
+        form_car: "预订车型",
+        form_msg: "备注需求",
+        form_submit: "提交预约咨询"
     },
     jp: {
         logo: "LITTLE BEE",
@@ -83,7 +93,14 @@ const i18nData = {
         fleet_page_sub: "全車緑ナンバー。プレミアムな移動体験を。",
         granace_desc: "トヨタの最高級送迎車。アルファードを超える広大な室内空間と4つの独立したマッサージシートを完備。",
         alphard_desc: "日本で最も愛される高級ミニバン。その静粛性と乗り心地の良さは、ビジネスや家族旅行に最適です。",
-        btn_book_now: "今すぐ予約"
+        btn_book_now: "今すぐ予約",
+        modal_title: "ご予約・お問合せ",
+        form_name: "お名前",
+        form_contact: "連絡先 (微信/Line/電話)",
+        form_date: "ご利用日",
+        form_car: "希望車両",
+        form_msg: "備考・詳細",
+        form_submit: "送信する咨询"
     },
     en: {
         logo: "LITTLE BEE",
@@ -122,7 +139,14 @@ const i18nData = {
         fleet_page_sub: "Professional green plate vehicles for a premium experience.",
         granace_desc: "Toyota's flagship MPV with spacious interior. Equipped with 4 independent massage seats.",
         alphard_desc: "Japan's most popular luxury MPV, known for its quietness and comfort. Perfect for families.",
-        btn_book_now: "Book Now"
+        btn_book_now: "Book Now",
+        modal_title: "Booking Inquiry",
+        form_name: "Your Name",
+        form_contact: "Contact (WeChat/Line/Phone)",
+        form_date: "Date",
+        form_car: "Vehicle",
+        form_msg: "Requirements",
+        form_submit: "Submit Inquiry"
     }
 };
 
