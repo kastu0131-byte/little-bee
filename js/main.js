@@ -1,17 +1,8 @@
-// 1. 启动轮播图
+// 1. 初始化 Swiper
 var swiper = new Swiper(".mySwiper", {
-    loop: true,
-    speed: 1000, // 切换速度变慢，更优雅
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    effect: "fade", // 淡入淡出效果
-    fadeEffect: { crossFade: true },
+    loop: true, speed: 1000, autoplay: { delay: 5000 },
+    pagination: { el: ".swiper-pagination", clickable: true },
+    effect: "fade"
 });
 
 // 2. 翻译数据库
@@ -19,58 +10,77 @@ const i18nData = {
     zh: {
         logo: "LITTLE BEE",
         menu_home: "首页",
+        menu_services: "服务项目",
         menu_fleet: "车型展示",
+        menu_about: "关于我们",
         hero_title1: "大阪关西机场 · 尊享接送",
         hero_sub1: "丰田 Granace 航空座椅旗舰体验",
-        hero_title2: "极致奢华 · 商务首选",
-        hero_sub2: "24小时中文管家式服务",
-        fleet_title: "旗舰车队",
-        car_desc: "拥有MPV界最宽敞的空间与最舒适的独立航空座椅，为您提供头等舱般的静谧与尊贵。",
-        spec_1: "接机:",
-        spec_2: "配置:",
-        spec_3: "服务:",
-        btn_book: "微信预约",
-        why_us_title: "为什么选择我们",
-        why_us_1_t: "正规绿牌车",
-        why_us_1_d: "日本国土交通省认证，全车含商业保险，安全合法有保障。",
-        why_us_2_t: "全程中文服务",
-        why_us_2_d: "华人老司机，无语言障碍，深度讲解关西文化。",
-        why_us_3_t: "准时透明",
-        why_us_3_d: "费用透明，绝无隐形消费，24小时接机延误免费等待。",
+        scene_title: "尊贵出行场景",
+        scene_1_t: "商务接待",
+        scene_1_d: "专业举牌接机，中文司导，助力商业成功。",
+        scene_2_t: "家庭旅游",
+        scene_2_d: "宽阔空间适合全家老小，定制化深度关西游。",
+        scene_3_t: "高尔夫专线",
+        scene_3_d: "超大行李空间，准时直达关西各大球场。",
+        why_us_title: "安全与合规",
+        why_us_1_t: "日本绿牌营业车",
+        why_us_1_d: "全车投保最高额度商业险，合法经营，拒用黑车。",
+        why_us_2_t: "资深华人司导",
+        why_us_2_d: "5年以上驾龄，精通日语及关西地理文化。",
+        why_us_3_t: "价格透明承诺",
+        why_us_3_d: "一口价包含燃油及保险，绝无现场加价。",
+        area_title: "服务版图",
+        area_desc: "深耕关西，覆盖大阪、京都、奈良、神户、和歌山全境",
         process_title: "预订流程",
         step_1: "1. 在线咨询",
         step_2: "2. 确认报价",
-        step_3: "3. 预约成功",
+        step_3: "3. 支付预约",
         step_4: "4. 开启旅程",
         footer_about: "关于 LITTLE BEE",
-        footer_desc: "立足大阪，服务关西。我们提供最高标准、最舒适的私人出行解决方案。",
+        footer_desc: "立足大阪，专注关西。提供最高标准、合法合规的华人包车与接送服务。",
         footer_contact: "联系方式",
         footer_company: "会社概要"
     },
     jp: {
         logo: "LITTLE BEE",
         menu_home: "ホーム",
+        menu_services: "サービス内容",
         menu_fleet: "車両紹介",
+        menu_about: "会社概要",
         hero_title1: "関西空港 · 高級送迎",
         hero_sub1: "トヨタ Granace 至高の移動体験",
-        hero_title2: "究極のラグジュアリー",
-        hero_sub2: "24時間対応 中国語ドライバー",
-        fleet_title: "車両ラインナップ",
-        car_desc: "ミニバン界最大級の広さと独立したマッサージシートで、ファーストクラスのような静寂と快適さを提供します。",
-        spec_1: "送迎:",
-        spec_2: "座席:",
-        spec_3: "担当:",
-        btn_book: "LINE/WeChat予約"
+        scene_title: "ご利用シーン",
+        scene_1_t: "ビジネス送迎",
+        scene_1_d: "空港でのお迎えからビジネスアテンドまで対応。",
+        scene_2_t: "家族旅行",
+        scene_2_d: "広々とした空間で、快適な関西の旅を。",
+        scene_3_t: "ゴルフ送迎",
+        scene_3_d: "大型荷物も対応。名門ゴルフ場への送迎。",
+        why_us_title: "安全へのこだわり",
+        why_us_1_t: "正規緑ナンバー車",
+        why_us_1_d: "営業用自動車保険加入、法令遵守の正規運行。",
+        why_us_2_t: "熟練ドライバー",
+        why_us_2_d: "日本語・中国語対応可能。関西を知り尽くした案内。",
+        why_us_3_t: "明朗会計",
+        why_us_3_d: "燃料代・保険代込み。追加料金なしの安心設定。",
+        area_title: "サービスエリア",
+        area_desc: "大阪、京都、奈良、神戸、和歌山全域に対応",
+        process_title: "ご予約の流れ",
+        step_1: "1. お問合せ",
+        step_2: "2. お見積り",
+        step_3: "3. 予約確定",
+        step_4: "4. お迎え",
+        footer_about: "LITTLE BEEについて",
+        footer_desc: "大阪に拠点を置き、関西全域で最高水準の送迎サービスを提供。",
+        footer_contact: "連絡先",
+        footer_company: "会社概要"
     }
 };
 
-// 3. 切换语言功能
 function changeLang(lang) {
     const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (i18nData[lang][key]) {
-            el.innerText = i18nData[lang][key];
-        }
+        if (i18nData[lang][key]) el.innerText = i18nData[lang][key];
     });
 }

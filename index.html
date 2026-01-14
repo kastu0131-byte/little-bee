@@ -6,20 +6,23 @@
     <title>Little Bee | Luxury Car Rental Osaka</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#" data-i18n="logo">LITTLE BEE</a>
+            <a class="navbar-brand" href="index.html" data-i18n="logo">LITTLE BEE</a>
             <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link active" href="#" data-i18n="menu_home">首页</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cars" data-i18n="menu_fleet">车型</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html" data-i18n="menu_home">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="menu_services">服务</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fleet.html" data-i18n="menu_fleet">车型展示</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="menu_about">关于我们</a></li>
                     <li class="nav-item ms-3">
                         <div class="btn-group" role="group">
                             <button type="button" class="btn btn-sm btn-outline-warning text-white" onclick="changeLang('zh')">中</button>
@@ -39,121 +42,118 @@
                     <p class="hero-subtitle" data-i18n="hero_sub1">丰田 Granace 航空座椅旗舰体验</p>
                 </div>
             </div>
-            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=2070&auto=format&fit=crop');">
-                <div class="hero-content">
-                    <h1 class="hero-title" data-i18n="hero_title2">极致奢华 · 商务首选</h1>
-                    <p class="hero-subtitle" data-i18n="hero_sub2">24小时中文管家式服务</p>
-                </div>
-            </div>
         </div>
         <div class="swiper-pagination"></div>
     </div>
 
-    <section id="cars" style="padding: 100px 0;">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-title text-uppercase" data-i18n="fleet_title">旗舰车队</h2>
-            </div>
-            
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="card car-card">
-                        <div class="row g-0">
-                            <div class="col-md-7">
-                                <img src="https://images.unsplash.com/photo-1605218427306-022020681052?q=80&w=1500&auto=format&fit=crop" class="img-fluid h-100 object-fit-cover" alt="Granace">
-                            </div>
-                            <div class="col-md-5 p-5 d-flex flex-column justify-content-center">
-                                <h3 class="mb-2 fw-bold">Toyota Granace</h3>
-                                <div class="text-warning mb-4">★★★★★ <span class="text-muted" style="font-size:0.8rem">PREMIUM</span></div>
-                                <p class="text-muted mb-4" data-i18n="car_desc">拥有MPV界最宽敞的空间与最舒适的独立航空座椅，为您提供头等舱般的静谧与尊贵。</p>
-                                <ul class="list-unstyled car-specs mb-4">
-                                    <li><strong data-i18n="spec_1">接机:</strong> 关西机场 KIX 举牌迎接</li>
-                                    <li><strong data-i18n="spec_2">配置:</strong> 4座/6座 独立按摩椅</li>
-                                    <li><strong data-i18n="spec_3">服务:</strong> 华人老司机 · 行李搬运</li>
-                                </ul>
-                                <a href="#" class="btn btn-dark btn-lg w-100" data-i18n="btn_book">微信预约</a>
-                            </div>
-                        </div>
+    <section class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="section-title text-uppercase" data-i18n="scene_title">尊贵出行场景</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm">
+                        <h4 class="text-warning" data-i18n="scene_1_t">商务接待</h4>
+                        <p class="small text-muted" data-i18n="scene_1_d">专业举牌接机，中文司导，助力商业成功。</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm">
+                        <h4 class="text-warning" data-i18n="scene_2_t">家庭旅游</h4>
+                        <p class="small text-muted" data-i18n="scene_2_d">宽阔空间适合全家老小，定制化深度关西游。</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm">
+                        <h4 class="text-warning" data-i18n="scene_3_t">高尔夫专线</h4>
+                        <p class="small text-muted" data-i18n="scene_3_d">超大行李空间，准时直达关西各大球场。</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section id="features" class="py-5 bg-white">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-title text-uppercase" data-i18n="why_us_title">服务优势</h2>
-        </div>
-        <div class="row g-4 text-center">
-            <div class="col-md-4">
-                <div class="p-4">
-                    <div class="mb-3 text-warning"><i class="bi bi-shield-check fs-1"></i></div>
-                    <h4 data-i18n="why_us_1_t">正规绿牌车</h4>
-                    <p class="text-muted" data-i18n="why_us_1_d">日本国土交通省认证，全车含商业保险，安全合法有保障。</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="p-4 border-start border-end">
-                    <div class="mb-3 text-warning"><i class="bi bi-chat-dots fs-1"></i></div>
-                    <h4 data-i18n="why_us_2_t">全程中文服务</h4>
-                    <p class="text-muted" data-i18n="why_us_2_d">华人老司机，无语言障碍，深度讲解关西文化。</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="p-4">
-                    <div class="mb-3 text-warning"><i class="bi bi-clock-history fs-1"></i></div>
-                    <h4 data-i18n="why_us_3_t">准时透明</h4>
-                    <p class="text-muted" data-i18n="why_us_3_d">费用透明，绝无隐形消费，24小时接机延误免费等待。</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section id="process" class="py-5" style="background: #f4f4f4;">
-    <div class="container">
-        <div class="text-center mb-5">
+    <section id="features" class="py-5" style="background: #fdfdfd;">
+        <div class="container text-center">
+            <h2 class="section-title text-uppercase" data-i18n="why_us_title">安全与合规</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="mb-3 text-warning"><i class="bi bi-shield-lock fs-1"></i></div>
+                    <h4 data-i18n="why_us_1_t">日本绿牌营业车</h4>
+                    <p class="text-muted small" data-i18n="why_us_1_d">全车投保最高额度商业险，合法经营，拒用黑车。</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3 text-warning"><i class="bi bi-person-check fs-1"></i></div>
+                    <h4 data-i18n="why_us_2_t">资深华人司导</h4>
+                    <p class="text-muted small" data-i18n="why_us_2_d">5年以上驾龄，精通日语及关西地理文化。</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3 text-warning"><i class="bi bi-cash-stack fs-1"></i></div>
+                    <h4 data-i18n="why_us_3_t">价格透明承诺</h4>
+                    <p class="text-muted small" data-i18n="why_us_3_d">一口价包含燃油及保险，绝无现场加价。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="section-title text-uppercase text-warning" data-i18n="area_title">服务版图</h2>
+            <p class="mt-4 lead" data-i18n="area_desc">深耕关西，覆盖大阪、京都、奈良、神户、和歌山全境</p>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="p-5 border border-secondary rounded d-inline-block">
+                        <span class="badge bg-warning text-dark m-1 p-2">关西机场 (KIX)</span>
+                        <span class="badge bg-warning text-dark m-1 p-2">伊丹机场 (ITM)</span>
+                        <span class="badge bg-outline-warning m-1 p-2 border border-warning">大阪市区</span>
+                        <span class="badge bg-outline-warning m-1 p-2 border border-warning">京都古都</span>
+                        <span class="badge bg-outline-warning m-1 p-2 border border-warning">奈良公园</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-5">
+        <div class="container text-center">
             <h2 class="section-title text-uppercase" data-i18n="process_title">预订流程</h2>
+            <div class="row mt-5 text-center">
+                <div class="col-md-3" data-i18n="step_1">1. 在线咨询</div>
+                <div class="col-md-3" data-i18n="step_2">2. 确认报价</div>
+                <div class="col-md-3" data-i18n="step_3">3. 支付预约</div>
+                <div class="col-md-3" data-i18n="step_4">4. 开启旅程</div>
+            </div>
         </div>
-        <div class="row text-center">
-            <div class="col-md-3" data-i18n="step_1">1. 在线咨询</div>
-            <div class="col-md-3" data-i18n="step_2">2. 确认行程/报价</div>
-            <div class="col-md-3" data-i18n="step_3">3. 支付定金/预约成功</div>
-            <div class="col-md-3" data-i18n="step_4">4. 开启尊贵旅程</div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<footer class="bg-dark text-white pt-5 pb-3">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 mb-4">
-                <h5 class="text-warning mb-4" data-i18n="footer_about">关于 LITTLE BEE</h5>
-                <p class="small text-secondary" data-i18n="footer_desc">立足大阪，服务关西。我们致力于为每一位赴日客户提供最高标准、最舒适的私人出行解决方案。</p>
+    <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-warning mb-4" data-i18n="footer_about">关于 LITTLE BEE</h5>
+                    <p class="small text-secondary" data-i18n="footer_desc">立足大阪，专注关西。提供最高标准、合法合规的华人包车与接送服务。</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-warning mb-4" data-i18n="footer_contact">联系方式</h5>
+                    <ul class="list-unstyled small text-secondary">
+                        <li><i class="bi bi-geo-alt me-2"></i> 〒542-0081 大阪府大阪市中央区...</li>
+                        <li><i class="bi bi-envelope me-2"></i> info@littlebee-travel.jp</li>
+                        <li><i class="bi bi-telephone me-2"></i> +81 (0) 6-XXXX-XXXX</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-warning mb-4" data-i18n="footer_company">会社概要</h5>
+                    <p class="small text-secondary">
+                        Company: LITTLE BEE Co., Ltd.<br>
+                        License: 一般旅客自動車運送事業 (近運自貨第XXX号)
+                    </p>
+                </div>
             </div>
-            <div class="col-lg-4 mb-4">
-                <h5 class="text-warning mb-4" data-i18n="footer_contact">联系方式</h5>
-                <ul class="list-unstyled small text-secondary">
-                    <li><i class="bi bi-geo-alt me-2"></i> 〒542-0081 大阪府大阪市中央区南船場...</li>
-                    <li><i class="bi bi-envelope me-2"></i> info@littlebee-travel.jp</li>
-                    <li><i class="bi bi-telephone me-2"></i> +81 (0) 6-XXXX-XXXX</li>
-                </ul>
-            </div>
-            <div class="col-lg-4 mb-4">
-                <h5 class="text-warning mb-4" data-i18n="footer_company">会社概要</h5>
-                <p class="small text-secondary">
-                    Company: LITTLE BEE Co., Ltd.<br>
-                    License: 一般旅客自動車運送事業 (近運自貨第XXX号)
-                </p>
+            <hr class="border-secondary">
+            <div class="text-center small text-secondary">
+                &copy; 2026 LITTLE BEE. All Rights Reserved.
             </div>
         </div>
-        <hr class="border-secondary">
-        <div class="text-center small text-secondary">
-            &copy; 2024 LITTLE BEE. All Rights Reserved.
-        </div>
-    </div>
-</footer>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
