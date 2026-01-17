@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
 
@@ -24,10 +25,12 @@
                     <li class="nav-item"><a class="nav-link" href="fleet.html" data-i18n="menu_fleet">车型展示</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="menu_about">关于我们</a></li>
                     <li class="nav-item ms-3">
-                        <div class="btn-group" role="group">
-                            <button type="button" class="btn btn-sm btn-outline-warning text-white" onclick="changeLang('zh')">中</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary text-white" onclick="changeLang('jp')">JP</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary text-white" onclick="changeLang('en')">EN</button>
+                        <div id="google_translate_element" style="display:none;"></div>
+                        
+                        <div class="btn-group lang-switcher" role="group">
+                            <button type="button" class="btn btn-sm btn-outline-light" onclick="triggerGoogleTranslate('zh-CN')">中</button>
+                            <button type="button" class="btn btn-sm btn-outline-light" onclick="triggerGoogleTranslate('ja')">JP</button>
+                            <button type="button" class="btn btn-sm btn-outline-light" onclick="triggerGoogleTranslate('en')">EN</button>
                         </div>
                     </li>
                 </ul>

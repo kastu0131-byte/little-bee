@@ -88,3 +88,27 @@ body {
 
 /* --- 页脚 (增加顶部边线) --- */
 footer { border-top: 1px solid #333; font-size: 0.9rem; }
+/* 1. 强制隐藏顶部的谷歌翻译横条 */
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+/* 2. 修复横条被隐藏后，页面顶部留下的 40px 空白间隙 */
+body {
+    top: 0px !important;
+}
+
+/* 3. 隐藏鼠标悬停在翻译文字上时出现的原始文字浮窗 (Tooltip) */
+.goog-tooltip {
+    display: none !important;
+}
+.goog-tooltip:hover {
+    display: none !important;
+}
+
+/* 4. 隐藏翻译后文字被自动添加的蓝色高亮背景 */
+.goog-text-highlight {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
