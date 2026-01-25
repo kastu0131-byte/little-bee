@@ -1,24 +1,22 @@
-// 1. 谷歌翻译初始化
+// 1. 谷歌翻译引擎初始化
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({
         pageLanguage: 'zh-CN',
         includedLanguages: 'en,ja,zh-CN',
-        autoDisplay: false
+        autoDisplay: false // 禁止自动显示原始横条
     }, 'google_translate_element');
 }
 
-// 2. 自定义按钮“遥控”谷歌翻译的逻辑
+// 2. 你的自定义按钮调用函数
 function triggerGoogleTranslate(langCode) {
-    const googleCombo = document.querySelector('.goog-te-combo');
-    if (googleCombo) {
-        googleCombo.value = langCode;
-        googleCombo.dispatchEvent(new Event('change')); // 模拟用户点击了原生的选择框
-    } else {
-        console.error("翻译引擎尚未加载完毕");
+    const select = document.querySelector('.goog-te-combo');
+    if (select) {
+        select.value = langCode;
+        select.dispatchEvent(new Event('change'));
     }
 }
 
-// 3. 原有的 Swiper 初始化 (保持不变)
+// 3. 原有的 Swiper 初始化 (首页需要)
 if (document.querySelector(".mySwiper")) {
     var swiper = new Swiper(".mySwiper", {
         loop: true, speed: 1000, autoplay: { delay: 5000 },
@@ -26,3 +24,16 @@ if (document.querySelector(".mySwiper")) {
         effect: "fade"
     });
 }
+
+// 4. 强制隐藏谷歌翻译弹窗
+const observer = new MutationObserver(() => {
+    const popup = document.querySelector('.goog-te-balloon-frame');
+    if (popup) {
+        popup.style.display = 'none';
+        // 可以选择断开观察者，如果弹窗只出现一次
+        // observer.disconnect();
+    }
+});
+
+// 监视body的子节点变化
+observer.observe(document.body, { childList: true });

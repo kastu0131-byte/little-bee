@@ -86,29 +86,41 @@ body {
     } 
 }
 
-/* --- 页脚 (增加顶部边线) --- */
-footer { border-top: 1px solid #333; font-size: 0.9rem; }
-/* 1. 强制隐藏顶部的谷歌翻译横条 */
-.goog-te-banner-frame {
+/* --- 终极补丁：彻底干掉谷歌白框和偏移 --- */
+
+/* 1. 隐藏所有谷歌注入的 UI 容器（包括白框的外壳） */
+.skiptranslate,
+#google_translate_element,
+.goog-te-banner-frame,
+iframe.goog-te-banner-frame {
     display: none !important;
+    visibility: hidden !important;
 }
 
-/* 2. 修复横条被隐藏后，页面顶部留下的 40px 空白间隙 */
+/* 2. 核心：强制重置 body 偏移 */
 body {
-    top: 0px !important;
+    top: 0 !important;
+    /* position: static !important 确保谷歌无法通过绝对定位把页面往下推 */
+    position: static !important; 
 }
 
-/* 3. 隐藏鼠标悬停在翻译文字上时出现的原始文字浮窗 (Tooltip) */
-.goog-tooltip {
-    display: none !important;
-}
-.goog-tooltip:hover {
-    display: none !important;
+/* 3. 核心：强制重置 html 偏移（部分浏览器谷歌会改 html 的 margin） */
+html {
+    margin-top: 0px !important;
 }
 
-/* 4. 隐藏翻译后文字被自动添加的蓝色高亮背景 */
+/* 4. 隐藏翻译后的文字高亮和悬停时的气泡提示 */
 .goog-text-highlight {
     background-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
+}
+
+.goog-te-balloon-frame, .goog-tooltip {
+    display: none !important;
+}
+
+/* 5. 修复翻译后可能出现的额外边距 */
+#goog-gt-tt, .goog-te-balloon-frame{
+    display: none !important;
 }
