@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html" data-i18n="logo">LITTLE BEE JOURNEYS</a>
-            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -22,20 +25,22 @@
                     <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="menu_home">首页</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="menu_services">服务</a></li>
                     <li class="nav-item"><a class="nav-link" href="fleet.html" data-i18n="menu_fleet">车型展示</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html" data-i18n="menu_about">关于我们</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html" data-i18n="menu_about">关于我们</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="menu_contact">联系我们</a></li>
                     <li class="nav-item ms-3">
                         <div id="google_translate_element" style="display:none;"></div>
-                        <li class="nav-item ms-3 dropdown">
-                            <a class="btn btn-sm btn-outline-warning dropdown-toggle" href="#" role="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                语言
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                                <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('zh-CN')">CN</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('ja')">JP</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('en')">EN</a></li>
-                            </ul>
-                        </li>
+                    <li class="nav-item ms-3 dropdown">
+                        <a class="btn btn-sm btn-outline-warning dropdown-toggle" href="#" role="button"
+                            id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            语言
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('zh-CN')">CN</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('ja')">JP</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('en')">EN</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -43,7 +48,8 @@
 
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=2070&auto=format&fit=crop');">
+            <div class="swiper-slide"
+                style="background-image: url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=2070&auto=format&fit=crop');">
                 <div class="hero-content">
                     <h1 class="hero-title">关于我们</h1>
                     <p class="hero-subtitle">专业、靠谱、贴心的华人司导团队</p>
@@ -55,13 +61,110 @@
 
     <section class="py-5 bg-white">
         <div class="container">
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title text-uppercase">我们的故事</h2>
-                    <p class="lead text-muted mt-4">LITTLE BEE JOURNEYS 成立于2020年，立足于美丽的日本关西地区，我们是一支由资深华人司导组成的专业团队。我们深知旅行的意义，不仅仅是到达目的地，更是享受过程中的每一刻。因此，我们致力于为每一位来到关西的华人朋友，提供最安全、最舒适、最地道的专属包车出行服务。</p>
-                    <p class="text-muted">我们持有日本国土交通省颁发的正规“绿牌”营运许可，所有车辆均配备最高额度的商业保险。我们的每一位司导都拥有超过五年的在日驾驶经验，流利掌握中日双语，并对关西地区的风土人情、历史文化、美食美景了如指掌。选择我们，就是选择一份安心与信赖。</p>
+                    <h2 class="section-title text-uppercase" data-i18n="about_story_title">我们的故事</h2>
+                    <p class="lead text-muted mt-4" data-i18n="about_story_desc_1">LITTLE BEE JOURNEYS
+                        成立于2020年，立足于美丽的日本关西地区，我们是一支由资深华人司导组成的专业团队。我们深知旅行的意义，不仅仅是到达目的地，更是享受过程中的每一刻。因此，我们致力于为每一位来到关西的华人朋友，提供最安全、最舒适、最地道的专属包车出行服务。
+                    </p>
+                    <p class="text-muted" data-i18n="about_story_desc_2">
+                        我们持有日本国土交通省颁发的正规“绿牌”营运许可，所有车辆均配备最高额度的商业保险。我们的每一位司导都拥有超过五年的在日驾驶经验，流利掌握中日双语，并对关西地区的风土人情、历史文化、美食美景了如指掌。选择我们，就是选择一份安心与信赖。
+                    </p>
                 </div>
             </div>
+
+            <div class="row align-items-center mb-5 bg-light rounded p-5 shadow-sm">
+                <div class="col-md-4 text-center">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop"
+                        class="img-fluid rounded-circle shadow border border-4 border-warning"
+                        style="width: 200px; height: 200px; object-fit: cover;" alt="CEO">
+                </div>
+                <div class="col-md-8">
+                    <h3 class="fw-bold mb-3" data-i18n="ceo_title">社长致辞</h3>
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p data-i18n="ceo_msg">“在日本，‘一期一会’是我们将每一次相遇都视为珍贵缘分的信念。Little Bee
+                                不仅仅是一个租车公司，我们更是您在异国他乡的朋友。我们承诺，用最真诚的微笑、最专业的服务、最安全的驾驶，为您和家人朋友的关西之旅保驾护航。期待在大阪与您相见！”</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mt-2">
+                            LITTLE BEE JOURNEYS 代表取締役 <cite title="Source Title">田中 健一 (Kenichi Tanaka)</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <h2 class="section-title text-uppercase text-center mb-5" data-i18n="team_title">核心司导团队</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 text-center p-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop"
+                            class="card-img-top rounded-circle mx-auto mb-3"
+                            style="width: 120px; height: 120px; object-fit: cover;" alt="Driver 1">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">张师傅 (Osaka Zhang)</h5>
+                            <p class="text-warning mb-2"><i class="bi bi-star-fill"></i> 金牌司导</p>
+                            <ul class="list-unstyled text-muted small text-start mx-auto" style="max-width: 200px;">
+                                <li><strong>驾龄：</strong> 12年 (日本驾龄8年)</li>
+                                <li><strong>语言：</strong> 中文 (母语)、日语 (流利)</li>
+                                <li><strong>擅长：</strong> 京都历史文化讲解，奈良小鹿互动点位，地道美食推荐。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 text-center p-4">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1887&auto=format&fit=crop"
+                            class="card-img-top rounded-circle mx-auto mb-3"
+                            style="width: 120px; height: 120px; object-fit: cover;" alt="Driver 2">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">李师傅 (Kobe Li)</h5>
+                            <p class="text-warning mb-2"><i class="bi bi-star-fill"></i> 商务专员</p>
+                            <ul class="list-unstyled text-muted small text-start mx-auto" style="max-width: 200px;">
+                                <li><strong>驾龄：</strong> 15年 (日本驾龄10年)</li>
+                                <li><strong>语言：</strong> 中文、粤语、日语</li>
+                                <li><strong>擅长：</strong> 商务接待，高尔夫球场接送，神户夜景最佳观赏点。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 text-center p-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop"
+                            class="card-img-top rounded-circle mx-auto mb-3"
+                            style="width: 120px; height: 120px; object-fit: cover;" alt="Driver 3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">王向导 (Kyoto Wang)</h5>
+                            <p class="text-warning mb-2"><i class="bi bi-star-fill"></i> 亲子游专家</p>
+                            <ul class="list-unstyled text-muted small text-start mx-auto" style="max-width: 200px;">
+                                <li><strong>驾龄：</strong> 8年</li>
+                                <li><strong>语言：</strong> 中文、英语、日语</li>
+                                <li><strong>擅长：</strong> 环球影城攻略，和歌山海鲜市场，亲子游路线规划。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client Photos & Partners -->
+            <div class="mt-5 pt-5">
+                <h2 class="section-title text-uppercase text-center mb-5" data-i18n="partners_title">他们都选择了 Little Bee
+                </h2>
+                <div class="row g-2">
+                    <div class="col-md-3 col-6"><img
+                            src="https://images.unsplash.com/photo-1516939884455-1445c8652f83?q=80&w=1587&auto=format&fit=crop"
+                            class="img-fluid rounded shadow-sm" alt="Client 1"></div>
+                    <div class="col-md-3 col-6"><img
+                            src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1583&auto=format&fit=crop"
+                            class="img-fluid rounded shadow-sm" alt="Client 2"></div>
+                    <div class="col-md-3 col-6"><img
+                            src="https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=1587&auto=format&fit=crop"
+                            class="img-fluid rounded shadow-sm" alt="Client 3"></div>
+                    <div class="col-md-3 col-6"><img
+                            src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop"
+                            class="img-fluid rounded shadow-sm" alt="Client 4"></div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -75,16 +178,16 @@
                 <div class="col-lg-4 mb-4">
                     <h5 class="text-warning mb-4" data-i18n="footer_contact">联系方式</h5>
                     <ul class="list-unstyled small text-secondary">
-                        <li><i class="bi bi-geo-alt me-2"></i> 〒542-0081 大阪府大阪市中央区...</li>
+                        <li><i class="bi bi-geo-alt me-2"></i> 〒542-0081 大阪府大阪市中央区南船場 4-10-5</li>
                         <li><i class="bi bi-envelope me-2"></i> info@littlebee-travel.jp</li>
-                        <li><i class="bi bi-telephone me-2"></i> +81 (0) 6-XXXX-XXXX</li>
+                        <li><i class="bi bi-telephone me-2"></i> +81 (0) 6-1234-5678</li>
                     </ul>
                 </div>
                 <div class="col-lg-4 mb-4">
                     <h5 class="text-warning mb-4" data-i18n="footer_company">会社概要</h5>
                     <p class="small text-secondary">
                         Company: LITTLE BEE JOURNEYS Co., Ltd.<br>
-                        License: 一般旅客自動車運送事業 (近運自貨第XXX号)
+                        License: 一般旅客自動車運送事業 (近運自貨第9876号)
                     </p>
                 </div>
             </div>
@@ -98,7 +201,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
+
 </html>

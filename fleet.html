@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,40 +10,45 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="bg-light">
 
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html" data-i18n="logo">LITTLE BEE JOURNEYS</a>
-            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="menu_home">首页</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="menu_services">服务</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="fleet.html" data-i18n="menu_fleet">车型展示</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="fleet.html" data-i18n="menu_fleet">车型展示</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="menu_about">关于我们</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="menu_contact">联系我们</a></li>
                     <li class="nav-item ms-3">
                         <div id="google_translate_element" style="display:none;"></div>
-                        <li class="nav-item ms-3 dropdown">
-                            <a class="btn btn-sm btn-outline-warning dropdown-toggle" href="#" role="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                语言
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                                <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('zh-CN')">CN</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('ja')">JP</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('en')">EN</a></li>
-                            </ul>
-                        </li>
+                    <li class="nav-item ms-3 dropdown">
+                        <a class="btn btn-sm btn-outline-warning dropdown-toggle" href="#" role="button"
+                            id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            语言
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('zh-CN')">CN</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('ja')">JP</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('en')">EN</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop');">
+            <div class="swiper-slide"
+                style="background-image: url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop');">
                 <div class="hero-content">
                     <h1 class="hero-title" data-i18n="hero_title1">我们的车队</h1>
                     <p class="hero-subtitle" data-i18n="hero_sub1">安全、舒适、准时，您的专属司导</p>
@@ -52,69 +58,103 @@
         <div class="swiper-pagination"></div>
     </div>
 
-        <section class="py-5 bg-white">
+    <section class="py-5 bg-white">
         <div class="container">
-            <h2 class="section-title text-uppercase text-center" data-i18n="fleet_title">车型亮点</h2>
-            <div class="row g-5 mt-4 justify-content-center">
-                
-                <div class="col-lg-10 mb-5">
-                    <div class="card border-0 shadow-lg car-card-horizontal">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <img src="images/granace.jpg" class="img-fluid rounded-start" alt="Toyota Granace">
-                            </div>
-                            <div class="col-md-6 d-flex flex-column p-4">
-                                <h3 class="fw-bold">Toyota Granace <span class="badge bg-warning text-dark fs-6 ms-2" data-i18n="tag_flagship">至尊旗舰</span></h3>
-                                <p class="text-muted small mt-2" data-i18n="granace_desc">丰田顶级商务MPV，拥有超越埃尔法的车内空间，配备4座超宽航空按摩座椅，是长途商旅的首选。</p>
-                                <div class="mt-auto">
-                                    <div class="spec-table p-3 rounded bg-light">
-                                        <div class="d-flex justify-content-between border-bottom py-2">
-                                            <span class="text-secondary small"><i class="bi bi-people me-2"></i><span data-i18n="spec_people">建议人数</span></span>
-                                            <strong class="text-dark" data-i18n="granace_pax">3 - 5 人</strong>
-                                        </div>
-                                        <div class="d-flex justify-content-between border-bottom py-2">
-                                            <span class="text-secondary small"><i class="bi bi-briefcase me-2"></i><span data-i18n="spec_luggage">行李容量</span></span>
-                                            <strong class="text-dark" data-i18n="granace_lug">4 - 5 件 (28寸)</strong>
-                                        </div>
-                                        <div class="d-flex justify-content-between py-2">
-                                            <span class="text-secondary small"><i class="bi bi-arrows-fullscreen me-2"></i><span data-i18n="spec_length">车身长度</span></span>
-                                            <strong class="text-dark" data-i18n="granace_len">5,300 mm</strong>
-                                        </div>
-                                    </div>
-                                    <button type="button" class="btn btn-dark btn-lg w-100 mt-3" data-bs-toggle="modal" data-bs-target="#bookingModal" data-i18n="btn_book_now">立即预约</button>
+            <h2 class="section-title text-uppercase text-center" data-i18n="fleet_title">我们的车队</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-4">
+
+                <!-- Granace -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-lg car-card">
+                        <div class="position-relative">
+                            <img src="images/granace.jpg" class="card-img-top" alt="Toyota Granace">
+                            <span class="position-absolute top-0 end-0 bg-warning text-dark badge m-3 fs-6 shadow-sm"
+                                data-i18n="tag_flagship">至尊旗舰</span>
+                        </div>
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="fw-bold mb-1">Toyota Granace</h3>
+                            <p class="text-muted small mb-3">Premium MPV</p>
+                            <p class="card-text small text-secondary flex-grow-1" data-i18n="granace_desc">
+                                丰田顶级商务MPV，拥有超越埃尔法的车内空间，配备4座超宽航空按摩座椅，是长途商旅的首选。</p>
+
+                            <div class="spec-list mt-3 pt-3 border-top">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="text-muted small"><i class="bi bi-people-fill me-2"></i>3-5 人</span>
+                                    <span class="text-muted small"><i class="bi bi-briefcase-fill me-2"></i>4-5 件</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-muted small"><i class="bi bi-arrows-fullscreen me-2"></i>5.3
+                                        m</span>
+                                    <span class="text-warning small"><i class="bi bi-star-fill"></i> MAX</span>
                                 </div>
                             </div>
+
+                            <button type="button" class="btn btn-dark w-100 mt-4 rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#bookingModal" data-i18n="btn_book_now">立即预约</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-10">
-                    <div class="card border-0 shadow-lg car-card-horizontal">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <img src="images/alphard.jpg" class="img-fluid rounded-start" alt="Toyota Alphard">
-                            </div>
-                            <div class="col-md-6 d-flex flex-column p-4">
-                                <h3 class="fw-bold">Toyota Alphard <span class="badge bg-secondary fs-6 ms-2" data-i18n="tag_luxury">经典奢华</span></h3>
-                                <p class="text-muted small mt-2" data-i18n="alphard_desc">全日本最畅销的高端商旅车，以其出色的静谧性和舒适的底盘调校闻名，适合家庭出游及城市穿梭。</p>
-                                <div class="mt-auto">
-                                    <div class="spec-table p-3 rounded bg-light">
-                                        <div class="d-flex justify-content-between border-bottom py-2">
-                                            <span class="text-secondary small"><i class="bi bi-people me-2"></i><span data-i18n="spec_people">建议人数</span></span>
-                                            <strong class="text-dark" data-i18n="alphard_pax">4 - 6 人</strong>
-                                        </div>
-                                        <div class="d-flex justify-content-between border-bottom py-2">
-                                            <span class="text-secondary small"><i class="bi bi-briefcase me-2"></i><span data-i18n="spec_luggage">行李容量</span></span>
-                                            <strong class="text-dark" data-i18n="alphard_lug">2 - 3 件 (28寸)</strong>
-                                        </div>
-                                        <div class="d-flex justify-content-between py-2">
-                                            <span class="text-secondary small"><i class="bi bi-stars me-2"></i><span data-i18n="spec_comfort">舒适等级</span></span>
-                                            <strong class="text-dark">★★★★★</strong>
-                                        </div>
-                                    </div>
-                                    <button type="button" class="btn btn-dark btn-lg w-100 mt-3" data-bs-toggle="modal" data-bs-target="#bookingModal" data-i18n="btn_book_now">立即预约</button>
+                <!-- Alphard -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-lg car-card">
+                        <div class="position-relative">
+                            <img src="images/alphard.jpg" class="card-img-top" alt="Toyota Alphard">
+                            <span class="position-absolute top-0 end-0 bg-secondary badge m-3 fs-6 shadow-sm"
+                                data-i18n="tag_luxury">经典奢华</span>
+                        </div>
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="fw-bold mb-1">Toyota Alphard</h3>
+                            <p class="text-muted small mb-3">Luxury Van</p>
+                            <p class="card-text small text-secondary flex-grow-1" data-i18n="alphard_desc">
+                                全日本最畅销的高端商旅车，以其出色的静谧性和舒适的底盘调校闻名，适合家庭出游及城市穿梭。</p>
+
+                            <div class="spec-list mt-3 pt-3 border-top">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="text-muted small"><i class="bi bi-people-fill me-2"></i>4-6 人</span>
+                                    <span class="text-muted small"><i class="bi bi-briefcase-fill me-2"></i>2-3 件</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-muted small"><i class="bi bi-stars me-2"></i>舒适</span>
+                                    <span class="text-warning small"><i class="bi bi-star-fill"></i> ★★★★★</span>
                                 </div>
                             </div>
+
+                            <button type="button" class="btn btn-dark w-100 mt-4 rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#bookingModal" data-i18n="btn_book_now">立即预约</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hiace -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-lg car-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=2071&auto=format&fit=crop"
+                                class="card-img-top" alt="Toyota Hiace">
+                            <span class="position-absolute top-0 end-0 bg-success text-white badge m-3 fs-6 shadow-sm"
+                                data-i18n="tag_group">团体优选</span>
+                        </div>
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="fw-bold mb-1">Toyota Hiace</h3>
+                            <p class="text-muted small mb-3">Grand Cabin</p>
+                            <p class="card-text small text-secondary flex-grow-1" data-i18n="hiace_desc">
+                                超大空间的10座海狮商务车，专为家庭团体及大量行李的旅客设计，经济实惠，也是高尔夫球团的最佳拍档。</p>
+
+                            <div class="spec-list mt-3 pt-3 border-top">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="text-muted small"><i class="bi bi-people-fill me-2"></i>6-9 人</span>
+                                    <span class="text-muted small"><i class="bi bi-briefcase-fill me-2"></i>8-10
+                                        件</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-muted small"><i class="bi bi-tag-fill me-2"></i>实惠</span>
+                                    <span class="text-warning small"><i class="bi bi-star-fill"></i> ★★★★★</span>
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn btn-dark w-100 mt-4 rounded-pill" data-bs-toggle="modal"
+                                data-bs-target="#bookingModal" data-i18n="btn_book_now">立即预约</button>
                         </div>
                     </div>
                 </div>
@@ -124,45 +164,47 @@
     </section>
 
     <div class="modal fade" id="bookingModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 shadow">
-            <div class="modal-header bg-dark text-white">
-                <h5 class="modal-title" data-i18n="modal_title">立即预约咨询</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body p-4">
-                <form action="https://formspree.io/f/YOUR_ID" method="POST">
-                    <div class="mb-3">
-                        <label class="form-label small fw-bold" data-i18n="form_name">您的姓名</label>
-                        <input type="text" name="name" class="form-control" required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label small fw-bold" data-i18n="form_contact">联系方式 (微信/Line/电话)</label>
-                        <input type="text" name="contact" class="form-control" required>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label class="form-label small fw-bold" data-i18n="form_date">用车日期</label>
-                            <input type="date" name="date" class="form-control" required>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" data-i18n="modal_title">立即预约咨询</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form action="https://formspree.io/f/YOUR_ID" method="POST">
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold" data-i18n="form_name">您的姓名</label>
+                            <input type="text" name="name" class="form-control" required>
                         </div>
-                        <div class="col">
-                            <label class="form-label small fw-bold" data-i18n="form_car">预订车型</label>
-                            <select name="car" class="form-select">
-                                <option value="Granace">Toyota Granace</option>
-                                <option value="Alphard">Toyota Alphard</option>
-                            </select>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold" data-i18n="form_contact">联系方式 (微信/Line/电话)</label>
+                            <input type="text" name="contact" class="form-control" required>
                         </div>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label small fw-bold" data-i18n="form_msg">备注需求</label>
-                        <textarea name="message" class="form-control" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-warning w-100 fw-bold" data-i18n="form_submit">提交预约</button>
-                </form>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label class="form-label small fw-bold" data-i18n="form_date">用车日期</label>
+                                <input type="date" name="date" class="form-control" required>
+                            </div>
+                            <div class="col">
+                                <label class="form-label small fw-bold" data-i18n="form_car">预订车型</label>
+                                <select name="car" class="form-select">
+                                    <option value="Granace">Toyota Granace</option>
+                                    <option value="Alphard">Toyota Alphard</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold" data-i18n="form_msg">备注需求</label>
+                            <textarea name="message" class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100 fw-bold"
+                            data-i18n="form_submit">提交预约</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     <footer class="bg-dark text-white pt-5 pb-3 mt-5">
         <div class="container">
@@ -174,16 +216,16 @@
                 <div class="col-lg-4 mb-4">
                     <h5 class="text-warning mb-4" data-i18n="footer_contact">联系方式</h5>
                     <ul class="list-unstyled small text-secondary">
-                        <li><i class="bi bi-geo-alt me-2"></i> 〒542-0081 大阪府大阪市中央区...</li>
+                        <li><i class="bi bi-geo-alt me-2"></i> 〒542-0081 大阪府大阪市中央区南船場 4-10-5</li>
                         <li><i class="bi bi-envelope me-2"></i> info@littlebee-travel.jp</li>
-                        <li><i class="bi bi-telephone me-2"></i> +81 (0) 6-XXXX-XXXX</li>
+                        <li><i class="bi bi-telephone me-2"></i> +81 (0) 6-1234-5678</li>
                     </ul>
                 </div>
                 <div class="col-lg-4 mb-4">
                     <h5 class="text-warning mb-4" data-i18n="footer_company">会社概要</h5>
                     <p class="small text-secondary">
                         Company: LITTLE BEE JOURNEYS Co., Ltd.<br>
-                        License: 一般旅客自動車運送事業 (近運自貨第XXX号)
+                        License: 一般旅客自動車運送事業 (近運自貨第9876号)
                     </p>
                 </div>
             </div>
@@ -197,6 +239,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
+
 </html>

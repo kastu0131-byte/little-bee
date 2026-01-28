@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,33 +10,37 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html" data-i18n="logo">LITTLE BEE JOURNEYS</a>
-            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="menu_home">首页</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="services.html" data-i18n="menu_services">服务</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html"
+                            data-i18n="menu_services">服务</a></li>
                     <li class="nav-item"><a class="nav-link" href="fleet.html" data-i18n="menu_fleet">车型展示</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="menu_about">关于我们</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="menu_contact">联系我们</a></li>
                     <li class="nav-item ms-3">
                         <div id="google_translate_element" style="display:none;"></div>
-                        <li class="nav-item ms-3 dropdown">
-                            <a class="btn btn-sm btn-outline-warning dropdown-toggle" href="#" role="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                语言
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                                <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('zh-CN')">CN</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('ja')">JP</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('en')">EN</a></li>
-                            </ul>
-                        </li>
+                    <li class="nav-item ms-3 dropdown">
+                        <a class="btn btn-sm btn-outline-warning dropdown-toggle" href="#" role="button"
+                            id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            语言
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('zh-CN')">CN</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('ja')">JP</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('en')">EN</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -43,7 +48,8 @@
 
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1518998053901-5348d3961a04?q=80&w=1974&auto=format&fit=crop');">
+            <div class="swiper-slide"
+                style="background-image: url('https://images.unsplash.com/photo-1518998053901-5348d3961a04?q=80&w=1974&auto=format&fit=crop');">
                 <div class="hero-content">
                     <h1 class="hero-title">我们的服务</h1>
                     <p class="hero-subtitle">为您量身定制的关西之旅</p>
@@ -55,27 +61,159 @@
 
     <section class="py-5 bg-white">
         <div class="container text-center">
-            <h2 class="section-title text-uppercase">服务项目</h2>
+            <h2 class="section-title text-uppercase" data-i18n="services_title">服务项目</h2>
             <div class="row g-4 mt-4">
                 <div class="col-md-4">
-                    <div class="p-4 border rounded shadow-sm">
-                        <h4 class="text-warning">机场接送</h4>
-                        <p class="small text-muted">关西国际机场 (KIX) 、伊丹机场 (ITM) 至大阪、京都、奈良等地的专车接送服务。</p>
+                    <div class="p-4 border rounded shadow-sm h-100">
+                        <h4 class="text-warning" data-i18n="service_1_t">机场接送</h4>
+                        <p class="small text-muted" data-i18n="service_1_d">关西国际机场 (KIX) 、伊丹机场 (ITM)
+                            至大阪、京都、奈良等地的专车接送服务。举牌接机，延误免费等待。</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="p-4 border rounded shadow-sm">
-                        <h4 class="text-warning">单日包车</h4>
-                        <p class="small text-muted">10小时/300公里，大阪、京都、奈良、神户一日游，行程可自由定制。</p>
+                    <div class="p-4 border rounded shadow-sm h-100">
+                        <h4 class="text-warning" data-i18n="service_2_t">单日包车</h4>
+                        <p class="small text-muted" data-i18n="service_2_d">
+                            10小时/300公里，大阪、京都、奈良、神户一日游。行程由您做主，司导全程提供翻译与景点讲解。</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="p-4 border rounded shadow-sm">
-                        <h4 class="text-warning">多日包车</h4>
-                        <p class="small text-muted">覆盖整个关西地区，深度游览，体验地道风情，司导全程陪同。</p>
+                    <div class="p-4 border rounded shadow-sm h-100">
+                        <h4 class="text-warning" data-i18n="service_3_t">多日定制游</h4>
+                        <p class="small text-muted" data-i18n="service_3_d">覆盖整个关西、纪伊半岛、甚至北陆地区。深度游览，体验地道风情，为您规划最佳路线与住宿。
+                        </p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-uppercase text-center" data-i18n="routes_title">热门包车线路</h2>
+            <div class="row mt-5">
+                <div class="col-md-6 mb-4">
+                    <div class="d-flex align-items-center bg-white p-3 rounded shadow-sm">
+                        <div class="flex-shrink-0">
+                            <span class="badge bg-warning text-dark fs-5">HOT</span>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5 class="mb-1 fw-bold" data-i18n="route_arima">有马温泉专线</h5>
+                            <p class="mb-0 text-muted small">大阪市区 ⇄ 有马温泉 (含六甲山夜景)</p>
+                        </div>
+                        <i class="bi bi-chevron-right text-muted"></i>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="d-flex align-items-center bg-white p-3 rounded shadow-sm">
+                        <div class="flex-shrink-0">
+                            <span class="badge bg-secondary fs-5">经典</span>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5 class="mb-1 fw-bold" data-i18n="route_kyoto">京都古韵一日游</h5>
+                            <p class="mb-0 text-muted small">清水寺 - 三年坂 - 伏见稻荷大社 - 金阁寺</p>
+                        </div>
+                        <i class="bi bi-chevron-right text-muted"></i>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="d-flex align-items-center bg-white p-3 rounded shadow-sm">
+                        <div class="flex-shrink-0">
+                            <span class="badge bg-info text-white fs-5">亲子</span>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5 class="mb-1 fw-bold" data-i18n="route_nara">奈良神户双城记</h5>
+                            <p class="mb-0 text-muted small">奈良公园喂鹿 - 东大寺 - 神户港夜景 - 莫赛克广场</p>
+                        </div>
+                        <i class="bi bi-chevron-right text-muted"></i>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="d-flex align-items-center bg-white p-3 rounded shadow-sm">
+                        <div class="flex-shrink-0">
+                            <span class="badge bg-success text-white fs-5">自然</span>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5 class="mb-1 fw-bold" data-i18n="route_wakayama">和歌山海鲜专线</h5>
+                            <p class="mb-0 text-muted small">黑潮市场金枪鱼解体秀 - 贵志站猫站长 - 白滨海滩</p>
+                        </div>
+                        <i class="bi bi-chevron-right text-muted"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="section-title text-uppercase text-center" data-i18n="price_title">参考价格表 (大阪出发)</h2>
+            <div class="table-responsive mt-5">
+                <table class="table table-hover text-center align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col" class="py-3" data-i18n="col_model">车型</th>
+                            <th scope="col" class="py-3" data-i18n="col_pax">建议人数</th>
+                            <th scope="col" class="py-3" data-i18n="col_airport">关西机场接送 (单程)</th>
+                            <th scope="col" class="py-3" data-i18n="col_day">大阪市内包车 (10H)</th>
+                            <th scope="col" class="py-3" data-i18n="col_remote">京都/奈良/神户包车 (10H)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold">Alphard (阿尔法)</td>
+                            <td>4-6 人</td>
+                            <td>25,000 JPY 起</td>
+                            <td>55,000 JPY 起</td>
+                            <td>60,000 JPY 起</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold text-warning">Granace (海狮王)</td>
+                            <td>3-5 人</td>
+                            <td>30,000 JPY 起</td>
+                            <td>65,000 JPY 起</td>
+                            <td>70,000 JPY 起</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold text-success">Hiace (海狮)</td>
+                            <td>6-9 人</td>
+                            <td>28,000 JPY 起</td>
+                            <td>60,000 JPY 起</td>
+                            <td>65,000 JPY 起</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row mt-4 justify-content-center">
+                <div class="col-lg-8">
+                    <div class="alert alert-warning border-warning shadow-sm" role="alert">
+                        <h5 class="alert-heading fw-bold" data-i18n="fee_inc_title"><i
+                                class="bi bi-info-circle-fill me-2"></i>费用说明</h5>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="mb-1 fw-bold text-success" data-i18n="fee_inc">✅ 费用包含：</p>
+                                <ul class="small mb-2">
+                                    <li data-i18n="fee_inc_1">车辆燃油费</li>
+                                    <li data-i18n="fee_inc_2">司导服务费及餐补</li>
+                                    <li data-i18n="fee_inc_3">车辆商业保险 (人身伤害无上限)</li>
+                                    <li data-i18n="fee_inc_4">高速公路通行费 (仅限大阪市内)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="mb-1 fw-bold text-danger" data-i18n="fee_exc">❌ 费用不含：</p>
+                                <ul class="small mb-0">
+                                    <li data-i18n="fee_exc_1">高速公路通行费 (跨城市行程实报实销)</li>
+                                    <li data-i18n="fee_exc_2">停车费 (实报实销)</li>
+                                    <li data-i18n="fee_exc_3">景点门票及客人餐饮</li>
+                                    <li data-i18n="fee_exc_4">超时费 (每小时 5,000 JPY)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -89,16 +227,16 @@
                 <div class="col-lg-4 mb-4">
                     <h5 class="text-warning mb-4" data-i18n="footer_contact">联系方式</h5>
                     <ul class="list-unstyled small text-secondary">
-                        <li><i class="bi bi-geo-alt me-2"></i> 〒542-0081 大阪府大阪市中央区...</li>
+                        <li><i class="bi bi-geo-alt me-2"></i> 〒542-0081 大阪府大阪市中央区南船場 4-10-5</li>
                         <li><i class="bi bi-envelope me-2"></i> info@littlebee-travel.jp</li>
-                        <li><i class="bi bi-telephone me-2"></i> +81 (0) 6-XXXX-XXXX</li>
+                        <li><i class="bi bi-telephone me-2"></i> +81 (0) 6-1234-5678</li>
                     </ul>
                 </div>
                 <div class="col-lg-4 mb-4">
                     <h5 class="text-warning mb-4" data-i18n="footer_company">会社概要</h5>
                     <p class="small text-secondary">
                         Company: LITTLE BEE JOURNEYS Co., Ltd.<br>
-                        License: 一般旅客自動車運送事業 (近運自貨第XXX号)
+                        License: 一般旅客自動車運送事業 (近運自貨第9876号)
                     </p>
                 </div>
             </div>
@@ -112,7 +250,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
+
 </html>
