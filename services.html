@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务内容 | Little Bee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" data-i18n="logo">LITTLE BEE JOURNEYS</a>
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="menu_home">首页</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html" data-i18n="menu_services">服务</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fleet.html" data-i18n="menu_fleet">车型展示</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="menu_about">关于我们</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="menu_contact">联系我们</a></li>
+                    <li class="nav-item ms-3">
+                        <div id="google_translate_element" style="display:none;"></div>
+                        <li class="nav-item ms-3 dropdown">
+                            <a class="btn btn-sm btn-outline-warning dropdown-toggle" href="#" role="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                语言
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('zh-CN')">CN</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('ja')">JP</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('en')">EN</a></li>
+                            </ul>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1518998053901-5348d3961a04?q=80&w=1974&auto=format&fit=crop');">
+                <div class="hero-content">
+                    <h1 class="hero-title">我们的服务</h1>
+                    <p class="hero-subtitle">为您量身定制的关西之旅</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <section class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="section-title text-uppercase">服务项目</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm">
+                        <h4 class="text-warning">机场接送</h4>
+                        <p class="small text-muted">关西国际机场 (KIX) 、伊丹机场 (ITM) 至大阪、京都、奈良等地的专车接送服务。</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm">
+                        <h4 class="text-warning">单日包车</h4>
+                        <p class="small text-muted">10小时/300公里，大阪、京都、奈良、神户一日游，行程可自由定制。</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm">
+                        <h4 class="text-warning">多日包车</h4>
+                        <p class="small text-muted">覆盖整个关西地区，深度游览，体验地道风情，司导全程陪同。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-warning mb-4" data-i18n="footer_about">关于 LITTLE BEE JOURNEYS</h5>
+                    <p class="small text-secondary" data-i18n="footer_desc">立足大阪，专注关西。提供最高标准、合法合规的华人包车与接送服务。</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-warning mb-4" data-i18n="footer_contact">联系方式</h5>
+                    <ul class="list-unstyled small text-secondary">
+                        <li><i class="bi bi-geo-alt me-2"></i> 〒542-0081 大阪府大阪市中央区...</li>
+                        <li><i class="bi bi-envelope me-2"></i> info@littlebee-travel.jp</li>
+                        <li><i class="bi bi-telephone me-2"></i> +81 (0) 6-XXXX-XXXX</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-warning mb-4" data-i18n="footer_company">会社概要</h5>
+                    <p class="small text-secondary">
+                        Company: LITTLE BEE JOURNEYS Co., Ltd.<br>
+                        License: 一般旅客自動車運送事業 (近運自貨第XXX号)
+                    </p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center small text-secondary">
+                &copy; 2026 LITTLE BEE JOURNEYS. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

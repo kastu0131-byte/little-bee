@@ -23,12 +23,19 @@
                     <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="menu_services">服务</a></li>
                     <li class="nav-item"><a class="nav-link" href="fleet.html" data-i18n="menu_fleet">车型展示</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="menu_about">关于我们</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="menu_contact">联系我们</a></li>
                     <li class="nav-item ms-3">
                         <div id="google_translate_element" style="display:none;"></div>
-                        <button class="btn btn-sm btn-outline-warning" onclick="triggerGoogleTranslate('zh-CN')">CN</button>
-                        <button class="btn btn-sm btn-outline-secondary" onclick="triggerGoogleTranslate('ja')">JP</button>
-                        <button class="btn btn-sm btn-outline-secondary" onclick="triggerGoogleTranslate('en')">EN</button>
-                    </li>
+                        <li class="nav-item ms-3 dropdown">
+                            <a class="btn btn-sm btn-outline-warning dropdown-toggle" href="#" role="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                语言
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('zh-CN')">CN</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('ja')">JP</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="triggerGoogleTranslate('en')">EN</a></li>
+                            </ul>
+                        </li>
                 </ul>
             </div>
         </div>
