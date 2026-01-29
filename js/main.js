@@ -37,3 +37,47 @@ const observer = new MutationObserver(() => {
 
 // 监视body的子节点变化
 observer.observe(document.body, { childList: true });
+
+// 5. Booking Form Handler (Client-side Email)
+document.addEventListener('DOMContentLoaded', function () {
+    const bookingForm = document.getElementById('bookingForm');
+    if (bookingForm) {
+        bookingForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get values
+            const name = document.getElementById('bookingName').value;
+            const contact = document.getElementById('bookingContact').value;
+            const date = document.getElementById('bookingDate').value;
+            const car = document.getElementById('bookingCar').value;
+            const message = document.getElementById('bookingMessage').value;
+
+            // Construct Email Body
+            const subject = encodeURIComponent(`[Little Bee] New Booking Enquiry - ${name}`);
+            const body = encodeURIComponent(
+                `New Booking Enquiry
+
+Client Name: ${name}
+Contact Info: ${contact}
+
+Requested Date: ${date}
+Vehicle Model: ${car}
+
+Additional Requirements:
+${message}
+
+---------------------------
+Sent from Little Bee Website`
+            );
+
+            // Open Mail Client
+            alert('正在为您调用邮件客户端... (Opening Email Client)');
+            // Note: In some preview environments, mailto links may be blocked.
+            window.location.href = `mailto:info@littlebee-travel.jp?subject=${subject}&body=${body}`;
+
+            // Optional: Close modal after small delay
+            // const modal = bootstrap.Modal.getInstance(document.getElementById('bookingModal'));
+            // setTimeout(() => modal.hide(), 1000);
+        });
+    }
+});

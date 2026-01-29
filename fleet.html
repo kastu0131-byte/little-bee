@@ -172,31 +172,32 @@
                         aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-4">
-                    <form action="https://formspree.io/f/YOUR_ID" method="POST">
+                    <form id="bookingForm">
                         <div class="mb-3">
                             <label class="form-label small fw-bold" data-i18n="form_name">您的姓名</label>
-                            <input type="text" name="name" class="form-control" required>
+                            <input type="text" id="bookingName" name="name" class="form-control" required>
                         </div>
                         <div class="mb-3">
                             <label class="form-label small fw-bold" data-i18n="form_contact">联系方式 (微信/Line/电话)</label>
-                            <input type="text" name="contact" class="form-control" required>
+                            <input type="text" id="bookingContact" name="contact" class="form-control" required>
                         </div>
                         <div class="row mb-3">
                             <div class="col">
                                 <label class="form-label small fw-bold" data-i18n="form_date">用车日期</label>
-                                <input type="date" name="date" class="form-control" required>
+                                <input type="date" id="bookingDate" name="date" class="form-control" required>
                             </div>
                             <div class="col">
                                 <label class="form-label small fw-bold" data-i18n="form_car">预订车型</label>
-                                <select name="car" class="form-select">
+                                <select id="bookingCar" name="car" class="form-select">
                                     <option value="Granace">Toyota Granace</option>
                                     <option value="Alphard">Toyota Alphard</option>
+                                    <option value="Hiace">Toyota Hiace</option>
                                 </select>
                             </div>
                         </div>
                         <div class="mb-3">
                             <label class="form-label small fw-bold" data-i18n="form_msg">备注需求</label>
-                            <textarea name="message" class="form-control" rows="3"></textarea>
+                            <textarea id="bookingMessage" name="message" class="form-control" rows="3"></textarea>
                         </div>
                         <button type="submit" class="btn btn-warning w-100 fw-bold"
                             data-i18n="form_submit">提交预约</button>
