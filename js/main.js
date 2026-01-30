@@ -71,9 +71,39 @@ Sent from Little Bee Website`
             );
 
             // Open Mail Client
-            alert('正在为您调用邮件客户端... (Opening Email Client)');
+            // alert('正在为您调用邮件客户端... (Opening Email Client)'); 
             // Note: In some preview environments, mailto links may be blocked.
-            window.location.href = `mailto:info@littlebee-travel.jp?subject=${subject}&body=${body}`;
+            window.location.href = `mailto:siaokittyyu@hotmail.com?subject=${subject}&body=${body}`;
+
+            // --- Fallback UI ---
+            // Update modal content to show "Success/Manual Copy" state
+            // This ensures that if the mail app DOESN'T open, the user isn't left wondering.
+            const modalBody = document.querySelector('#bookingModal .modal-body');
+            const originalBodyText = decodeURIComponent(body); // Decode for display
+
+            if (modalBody) {
+                modalBody.innerHTML = `
+                    <div class="text-center">
+                        <div class="mb-4 text-success">
+                            <i class="bi bi-check-circle-fill" style="font-size: 3rem;"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Booking Ready!</h4>
+                        <p class="text-muted small mb-4">
+                            We have attempted to open your email app.<br>
+                            If it did not open, please <strong>copy the text below</strong> and email it to:<br>
+                            <a href="mailto:siaokittyyu@hotmail.com" class="fw-bold text-dark">siaokittyyu@hotmail.com</a>
+                        </p>
+                        
+                        <div class="position-relative mb-4">
+                            <textarea class="form-control bg-light" rows="10" readonly id="bookingContent">${originalBodyText}</textarea>
+                        </div>
+
+                        <button onclick="navigator.clipboard.writeText(document.getElementById('bookingContent').value); this.innerText='Copied!';" class="btn btn-warning w-100 fw-bold rounded-pill">
+                            <i class="bi bi-clipboard me-2"></i> Copy to Clipboard
+                        </button>
+                    </div>
+                `;
+            }
 
             // Optional: Close modal after small delay
             // const modal = bootstrap.Modal.getInstance(document.getElementById('bookingModal'));
