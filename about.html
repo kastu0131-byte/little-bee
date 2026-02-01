@@ -49,7 +49,7 @@
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide"
-                style="background-image: url('images/hero_about_real.png'); background-size: cover; background-position: center;">
+                style="background-image: url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center;">
                 <div class="hero-content">
                     <h1 class="hero-title">关于我们</h1>
                     <p class="hero-subtitle">专业、靠谱、贴心的华人司导团队</p>
@@ -59,178 +59,184 @@
         <div class="swiper-pagination"></div>
     </div>
 
-    <section class="py-5 bg-white">
+    <section class="py-5">
         <div class="container">
             <!-- Removed "Our Story" section as per user request -->
 
 
-            <div class="row align-items-center mb-5 bg-light rounded p-5 shadow-sm">
+            <div class="row align-items-center mb-5 bg-dark-premium rounded p-5">
                 <div class="col-md-4 text-center">
                     <img src="images/member/社长-戴鑫.jpg"
-                        class="img-fluid rounded-circle shadow border border-4 border-warning"
+                        class="img-fluid rounded-circle shadow border border-4 border-warning-soft"
                         style="width: 200px; height: 200px; object-fit: cover;" alt="CEO">
                 </div>
                 <div class="col-md-8">
-                    <h3 class="fw-bold mb-3" data-i18n="ceo_title">社长寄语</h3>
+                    <h3 class="fw-bold mb-3 text-warning" data-i18n="ceo_title">社长寄语</h3>
                     <figure>
-                        <blockquote class="blockquote">
-                            <p class="mb-3">
+                        <blockquote class="blockquote text-white">
+                            <p class="mb-3" style="font-weight: 300; line-height: 1.8;">
                                 我们深知，每一次旅程对您而言都弥足珍贵。因此，我们车队以最高的安全标准为基石，以日式“おもてなし”（诚挚款待）之心为灵魂。从车辆维护的严谨，到司机团队的培训，我们都倾注全力，力求为您提供安心、准时、舒适的移动体验。
                             </p>
-                            <p class="mb-3">
+                            <p class="mb-3" style="font-weight: 300; line-height: 1.8;">
                                 我们不仅是交通的提供者，更愿成为您探索日本独特魅力的可信赖伙伴。无论是壮丽的自然风光，还是深厚的文化底蕴，我们都期待用专业的服务，护送您和您的家人、朋友，创造一段段美好而难忘的旅行记忆。
                             </p>
-                            <p>您的满意，是我们前进的最大动力。期待与您相遇在旅途。</p>
+                            <p style="font-weight: 300;">您的满意，是我们前进的最大动力。期待与您相遇在旅途。</p>
                         </blockquote>
                         <figcaption class="blockquote-footer mt-2">
-                            LITTLE BEE JOURNEYS 代表取締役 <cite title="Source Title">戴鑫 (Dai Xin)</cite>
+                            LITTLE BEE JOURNEYS 代表取締役 <cite title="Source Title" class="text-warning">戴鑫 (Dai
+                                Xin)</cite>
                         </figcaption>
                     </figure>
                 </div>
             </div>
 
-            <h2 class="section-title text-uppercase text-center mb-5" data-i18n="team_title">核心司导团队</h2>
-            <div class="row g-4">
-                <!-- 01 亲子游专家 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="member-card">
-                        <div class="member-img-container">
-                            <img src="images/member/亲子游专家-吴钦凯.jpg" class="member-img mx-auto d-block" alt="吴钦凯">
-                        </div>
-                        <div class="member-info">
-                            <div class="member-role">亲子游专家</div>
-                            <h5 class="member-name">吴钦凯</h5>
-                            <ul class="member-details list-unstyled">
-                                <!-- <li><strong>驾龄：</strong> </li> -->
-                                <li><strong>语言：</strong> 中文、日文</li>
-                                <li><strong>擅长：</strong> 环球影城、迪士尼攻略，亲子有路线规划</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 02 美食司导 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="member-card">
-                        <div class="member-img-container">
-                            <img src="images/member/美食司导-张晋.jpg" class="member-img mx-auto d-block" alt="张晋">
-                        </div>
-                        <div class="member-info">
-                            <div class="member-role">美食司导</div>
-                            <h5 class="member-name">张晋</h5>
-                            <ul class="member-details list-unstyled">
-                                <!-- <li><strong>驾龄：</strong> </li> -->
-                                <li><strong>语言：</strong> 中文、日文</li>
-                                <li><strong>擅长：</strong> 熟悉京都各景点，关西美食推荐</li>
-                            </ul>
+            <!-- Team Section Wrapper for Gradient Background -->
+            <div class="team-section-wrapper position-relative p-4 rounded-4 overflow-hidden mb-5">
+                <div class="team-gradient-bg"></div>
+                <h2 class="section-title text-uppercase text-center mb-5 position-relative z-2" data-i18n="team_title"
+                    style="color: #6d5e2e;">核心司导团队</h2>
+                <div class="row g-4 position-relative z-2">
+                    <!-- 01 亲子游专家 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member-card">
+                            <div class="member-img-container">
+                                <img src="images/member/亲子游专家-吴钦凯.jpg" class="member-img mx-auto d-block" alt="吴钦凯">
+                            </div>
+                            <div class="member-info">
+                                <div class="member-role">亲子游专家</div>
+                                <h5 class="member-name">吴钦凯</h5>
+                                <ul class="member-details list-unstyled">
+                                    <!-- <li><strong>驾龄：</strong> </li> -->
+                                    <li><strong>语言：</strong> 中文、日文</li>
+                                    <li><strong>擅长：</strong> 环球影城、迪士尼攻略，亲子有路线规划</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- 03 商务专员 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="member-card">
-                        <div class="member-img-container">
-                            <img src="images/member/商务专员-李超.jpg" class="member-img mx-auto d-block" alt="李超">
-                        </div>
-                        <div class="member-info">
-                            <div class="member-role">商务专员</div>
-                            <h5 class="member-name">李超</h5>
-                            <ul class="member-details list-unstyled">
-                                <!-- <li><strong>驾龄：</strong> </li> -->
-                                <li><strong>语言：</strong> 中文、日文</li>
-                                <li><strong>擅长：</strong> 接待各种商务团，知名人士私行</li>
-                            </ul>
+                    <!-- 02 美食司导 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member-card">
+                            <div class="member-img-container">
+                                <img src="images/member/美食司导-张晋.jpg" class="member-img mx-auto d-block" alt="张晋">
+                            </div>
+                            <div class="member-info">
+                                <div class="member-role">美食司导</div>
+                                <h5 class="member-name">张晋</h5>
+                                <ul class="member-details list-unstyled">
+                                    <!-- <li><strong>驾龄：</strong> </li> -->
+                                    <li><strong>语言：</strong> 中文、日文</li>
+                                    <li><strong>擅长：</strong> 熟悉京都各景点，关西美食推荐</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- 04 开心司导 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="member-card">
-                        <div class="member-img-container">
-                            <img src="images/member/开心司导-张鑫.jpg" class="member-img mx-auto d-block" alt="张鑫">
-                        </div>
-                        <div class="member-info">
-                            <div class="member-role">开心司导</div>
-                            <h5 class="member-name">张鑫</h5>
-                            <ul class="member-details list-unstyled">
-                                <!-- <li><strong>驾龄：</strong> </li> -->
-                                <li><strong>语言：</strong> 中文、简单英文、日文</li>
-                                <li><strong>擅长：</strong> 适应各种随心所欲团队，能够更好的规划路线</li>
-                            </ul>
+                    <!-- 03 商务专员 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member-card">
+                            <div class="member-img-container">
+                                <img src="images/member/商务专员-李超.jpg" class="member-img mx-auto d-block" alt="李超">
+                            </div>
+                            <div class="member-info">
+                                <div class="member-role">商务专员</div>
+                                <h5 class="member-name">李超</h5>
+                                <ul class="member-details list-unstyled">
+                                    <!-- <li><strong>驾龄：</strong> </li> -->
+                                    <li><strong>语言：</strong> 中文、日文</li>
+                                    <li><strong>擅长：</strong> 接待各种商务团，知名人士私行</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- 05 时尚司导 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="member-card">
-                        <div class="member-img-container">
-                            <img src="images/member/时尚司导-王永强.jpg" class="member-img mx-auto d-block" alt="王永强">
-                        </div>
-                        <div class="member-info">
-                            <div class="member-role">时尚司导</div>
-                            <h5 class="member-name">王永强</h5>
-                            <ul class="member-details list-unstyled">
-                                <!-- <li><strong>驾龄：</strong> </li> -->
-                                <li><strong>语言：</strong> 中文、日文</li>
-                                <li><strong>擅长：</strong> 熟知关西各大购物天堂，能优秀的规划购物行程</li>
-                            </ul>
+                    <!-- 04 开心司导 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member-card">
+                            <div class="member-img-container">
+                                <img src="images/member/开心司导-张鑫.jpg" class="member-img mx-auto d-block" alt="张鑫">
+                            </div>
+                            <div class="member-info">
+                                <div class="member-role">开心司导</div>
+                                <h5 class="member-name">张鑫</h5>
+                                <ul class="member-details list-unstyled">
+                                    <!-- <li><strong>驾龄：</strong> </li> -->
+                                    <li><strong>语言：</strong> 中文、简单英文、日文</li>
+                                    <li><strong>擅长：</strong> 适应各种随心所欲团队，能够更好的规划路线</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- 06 金牌司导 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="member-card">
-                        <div class="member-img-container">
-                            <img src="images/member/金牌司导-王曦.jpg" class="member-img mx-auto d-block" alt="王曦">
-                        </div>
-                        <div class="member-info">
-                            <div class="member-role">金牌司导</div>
-                            <h5 class="member-name">王曦</h5>
-                            <ul class="member-details list-unstyled">
-                                <!-- <li><strong>驾龄：</strong> </li> -->
-                                <li><strong>语言：</strong> 中文、日文、英文</li>
-                                <li><strong>擅长：</strong> 各种商务重要人物接待，熟悉关西，关东各大景点</li>
-                            </ul>
+                    <!-- 05 时尚司导 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member-card">
+                            <div class="member-img-container">
+                                <img src="images/member/时尚司导-王永强.jpg" class="member-img mx-auto d-block" alt="王永强">
+                            </div>
+                            <div class="member-info">
+                                <div class="member-role">时尚司导</div>
+                                <h5 class="member-name">王永强</h5>
+                                <ul class="member-details list-unstyled">
+                                    <!-- <li><strong>驾龄：</strong> </li> -->
+                                    <li><strong>语言：</strong> 中文、日文</li>
+                                    <li><strong>擅长：</strong> 熟知关西各大购物天堂，能优秀的规划购物行程</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- 07 银龄伴侣司导 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="member-card">
-                        <div class="member-img-container">
-                            <img src="images/member/银龄伴侣司导-尚进.jpg" class="member-img mx-auto d-block" alt="尚进">
-                        </div>
-                        <div class="member-info">
-                            <div class="member-role">银龄伴侣司导</div>
-                            <h5 class="member-name">尚进</h5>
-                            <ul class="member-details list-unstyled">
-                                <!-- <li><strong>驾龄：</strong> </li> -->
-                                <li><strong>语言：</strong> 中文、日文</li>
-                                <li><strong>擅长：</strong> 温馨陪伴，熟悉京都景区历史文化</li>
-                            </ul>
+                    <!-- 06 金牌司导 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member-card">
+                            <div class="member-img-container">
+                                <img src="images/member/金牌司导-王曦.jpg" class="member-img mx-auto d-block" alt="王曦">
+                            </div>
+                            <div class="member-info">
+                                <div class="member-role">金牌司导</div>
+                                <h5 class="member-name">王曦</h5>
+                                <ul class="member-details list-unstyled">
+                                    <!-- <li><strong>驾龄：</strong> </li> -->
+                                    <li><strong>语言：</strong> 中文、日文、英文</li>
+                                    <li><strong>擅长：</strong> 各种商务重要人物接待，熟悉关西，关东各大景点</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- 08 运动天才司导 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="member-card">
-                        <div class="member-img-container">
-                            <img src="images/member/运动天才司导-江卓杰.jpg" class="member-img mx-auto d-block" alt="江卓杰">
+                    <!-- 07 银龄伴侣司导 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member-card">
+                            <div class="member-img-container">
+                                <img src="images/member/银龄伴侣司导-尚进.jpg" class="member-img mx-auto d-block" alt="尚进">
+                            </div>
+                            <div class="member-info">
+                                <div class="member-role">银龄伴侣司导</div>
+                                <h5 class="member-name">尚进</h5>
+                                <ul class="member-details list-unstyled">
+                                    <!-- <li><strong>驾龄：</strong> </li> -->
+                                    <li><strong>语言：</strong> 中文、日文</li>
+                                    <li><strong>擅长：</strong> 温馨陪伴，熟悉京都景区历史文化</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="member-info">
-                            <div class="member-role">运动天才司导</div>
-                            <h5 class="member-name">江卓杰</h5>
-                            <ul class="member-details list-unstyled">
-                                <!-- <li><strong>驾龄：</strong> </li> -->
-                                <li><strong>语言：</strong> 中文、日文、英文</li>
-                                <li><strong>擅长：</strong> 熟悉各种运动项目场地，关西各大景点路线</li>
-                            </ul>
+                    </div>
+
+                    <!-- 08 运动天才司导 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member-card">
+                            <div class="member-img-container">
+                                <img src="images/member/运动天才司导-江卓杰.jpg" class="member-img mx-auto d-block" alt="江卓杰">
+                            </div>
+                            <div class="member-info">
+                                <div class="member-role">运动天才司导</div>
+                                <h5 class="member-name">江卓杰</h5>
+                                <ul class="member-details list-unstyled">
+                                    <!-- <li><strong>驾龄：</strong> </li> -->
+                                    <li><strong>语言：</strong> 中文、日文、英文</li>
+                                    <li><strong>擅长：</strong> 熟悉各种运动项目场地，关西各大景点路线</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

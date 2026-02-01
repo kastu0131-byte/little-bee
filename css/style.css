@@ -6,6 +6,15 @@
     /* 保留遮罩变量 */
 }
 
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll just in case */
+}
+
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", sans-serif;
     background-color: #f9f9f9;
@@ -55,6 +64,11 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
 .swiper-slide::before {
@@ -257,24 +271,24 @@ html {
 
 /* --- 团队成员卡片 (Premium Style) --- */
 .member-card {
-    background: #fff;
+    background: linear-gradient(145deg, #2b2b2b, #1a1a1a);
     border-radius: 15px;
     overflow: hidden;
     transition: all 0.4s ease;
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     height: 100%;
 }
 
 .member-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(212, 175, 55, 0.15);
-    border-color: rgba(212, 175, 55, 0.3);
+    border-color: rgba(212, 175, 55, 0.5);
 }
 
 .member-img-container {
     padding: 30px;
     position: relative;
-    background: radial-gradient(circle at center, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
 }
 
 .member-img {
@@ -282,8 +296,8 @@ html {
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #fff;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.4s ease;
 }
 
@@ -310,14 +324,15 @@ html {
     font-weight: 700;
     font-size: 1.25rem;
     margin-bottom: 15px;
-    color: var(--black);
+    color: #fff;
 }
+
 
 .member-details {
     text-align: left;
     font-size: 0.85rem;
-    color: #666;
-    background: #f8f9fa;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.03);
     padding: 15px;
     border-radius: 10px;
 }
@@ -332,7 +347,113 @@ html {
 }
 
 .member-details strong {
-    color: var(--black);
+    color: #fff;
     margin-right: 5px;
     min-width: 45px;
+}
+
+/* --- Premium Visual Enhancements (Warm Luxury Theme) --- */
+.bg-dark-premium {
+    /* Keeping CEO section dark but softening it to dark warm grey */
+    background: linear-gradient(135deg, #2e2e2e 0%, #1f1f1f 100%);
+    color: #fff;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.team-gradient-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Warm Cream / Soft Gold Gradient */
+    background: linear-gradient(120deg, #fffef0, #fff8db, #fffef0, #fcfbf5);
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
+    z-index: 1;
+    border-radius: 1rem;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Warm Luxury Card Override */
+.team-section-wrapper .member-card {
+    background: #ffffff;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: none;
+    /* Borderless */
+    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.08);
+    /* Soft Gold Shadow */
+    border-radius: 20px;
+    /* Softer corners */
+}
+
+.team-section-wrapper .member-card:hover {
+    transform: translateY(-8px);
+    background: #fff;
+    border: none;
+    box-shadow: 0 20px 50px rgba(212, 175, 55, 0.2);
+}
+
+.team-section-wrapper .member-img {
+    border: 3px solid rgba(212, 175, 55, 0.2);
+    /* Soft Gold Ring */
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.15);
+}
+
+.team-section-wrapper .member-card:hover .member-img {
+    border-color: var(--gold);
+    transform: scale(1.05);
+}
+
+/* Typography Updates for Light Background */
+.team-section-wrapper .member-name {
+    color: #2c2c2c;
+    /* Dark Grey */
+}
+
+.team-section-wrapper .member-details {
+    background: transparent;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.team-section-wrapper .member-details strong {
+    color: #bfa048;
+    /* Darker Gold for readability on light */
+}
+
+.team-section-wrapper .member-details li {
+    color: #666;
+}
+
+.text-gold-gradient {
+    background: linear-gradient(to right, #D4AF37, #F2D06B);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.blockquote-footer {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.border-warning-soft {
+    border-color: rgba(212, 175, 55, 0.5) !important;
 }
