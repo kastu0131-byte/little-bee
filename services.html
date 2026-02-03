@@ -90,38 +90,502 @@
 
     <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="section-title text-uppercase text-center" data-i18n="routes_title">热门包车线路</h2>
-            <div class="row mt-5">
-                <div class="col-md-4 mb-4">
-                    <div class="d-flex align-items-center bg-white p-3 rounded shadow-sm h-100">
-                        <div class="flex-shrink-0">
-                            <span class="badge bg-warning text-dark fs-5">HOT</span>
-                        </div>
-                        <div class="flex-grow-1 ms-3">
-                            <h5 class="mb-1 fw-bold" data-i18n="route_nara_uji">大阪奈良宇治</h5>
-                            <p class="mb-0 text-muted small">大阪出发，东大寺，春日大社，奈良公园，宇治平等院，回大阪</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="d-flex align-items-center bg-white p-3 rounded shadow-sm h-100">
-                        <div class="flex-shrink-0">
-                            <span class="badge bg-secondary fs-5">经典</span>
-                        </div>
-                        <div class="flex-grow-1 ms-3">
-                            <h5 class="mb-1 fw-bold" data-i18n="route_osaka_kyoto">大阪京都</h5>
-                            <p class="mb-0 text-muted small">大阪出发，伏见稻荷大社、清水寺、祇园、金阁寺、岚山</p>
+            <h2 class="section-title text-uppercase text-center mb-5" data-i18n="routes_title">精选行程推荐</h2>
+
+            <!-- Kyoto Classic Itinerary -->
+            <div class="card border-0 shadow-lg overflow-hidden rounded-4 mb-5">
+                <div class="card-header p-0 position-relative">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+                    <div class="p-4 p-lg-5 position-relative z-1 text-white"
+                        style="background-image: url('images/service/kyoto (1).jpg'); background-size: cover; background-position: center;">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 text-shadow">
+                            <div>
+                                <span class="badge bg-warning text-dark mb-2">人气 No.1</span>
+                                <h3 class="mb-0 fw-bold text-warning">京都经典全包一日游</h3>
+                                <p class="mb-0 text-white opacity-75 small mt-1">一天串联五大必打卡地标 | 专车接送 | 深度体验</p>
+                            </div>
+                            <div class="text-end">
+                                <h4 class="mb-0">10小时 / 300km</h4>
+                                <small class="opacity-75">大阪往返</small>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="d-flex align-items-center bg-white p-3 rounded shadow-sm h-100">
-                        <div class="flex-shrink-0">
-                            <span class="badge bg-info text-white fs-5">休闲</span>
+
+                <div class="card-body p-4 p-lg-5 bg-white">
+                    <!-- Highlights -->
+                    <h5 class="fw-bold text-secondary mb-4"><i class="bi bi-star-fill text-warning me-2"></i>行程亮点</h5>
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-4">
+                            <div class="bg-light p-3 rounded-3 h-100 border-start border-4 border-warning">
+                                <h6 class="fw-bold">经典全包</h6>
+                                <p class="small text-muted mb-0">一天串联伏见稻荷大社、清水寺、祇园、金阁寺、岚山五大京都必打卡地标，适合时间紧、想一次刷完精华的游客。</p>
+                            </div>
                         </div>
-                        <div class="flex-grow-1 ms-3">
-                            <h5 class="mb-1 fw-bold" data-i18n="route_arima_outlet">大阪-有马温泉-奥莱</h5>
-                            <p class="mb-0 text-muted small">大阪出发，有马温泉（金汤）、下午奥莱、回大阪</p>
+                        <div class="col-md-4">
+                            <div class="bg-light p-3 rounded-3 h-100 border-start border-4 border-warning">
+                                <h6 class="fw-bold">交通顺路</h6>
+                                <p class="small text-muted mb-0">从大阪出发，按由南向北再向西的顺序游览，景点之间基本顺路，最大化利用时间，减少折返。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light p-3 rounded-3 h-100 border-start border-4 border-warning">
+                                <h6 class="fw-bold">古都氛围拉满</h6>
+                                <p class="small text-muted mb-0">
+                                    千本鸟居、清水舞台、金阁倒影、竹林小径、花见小路，一天之内把京都的“神社、寺庙、庭园、老街、山水”全部收入囊中。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline -->
+                    <h5 class="fw-bold text-secondary mb-4"><i class="bi bi-clock-history text-warning me-2"></i>参考路线
+                    </h5>
+                    <div class="timeline ps-2">
+                        <!-- 07:30 -->
+                        <div class="timeline-item d-flex gap-3 mb-4">
+                            <div class="timeline-time fw-bold text-nowrap" style="width: 60px;">07:30</div>
+                            <div class="timeline-marker position-relative">
+                                <div class="bg-warning rounded-circle"
+                                    style="width: 12px; height: 12px; margin-top: 6px;"></div>
+                                <div class="border-start border-2 position-absolute"
+                                    style="left: 5px; top: 18px; bottom: -30px; height: 100%;"></div>
+                            </div>
+                            <div class="timeline-content pb-2">
+                                <h6 class="fw-bold mb-1">大阪出发 → 伏见稻荷大社</h6>
+                                <p class="small text-muted mb-0">建议一早抵达，避开人潮，在千本鸟居里拍出“无人感”大片。</p>
+                            </div>
+                        </div>
+
+                        <!-- 08:30 -->
+                        <div class="timeline-item d-flex gap-3 mb-4">
+                            <div class="timeline-time fw-bold text-nowrap" style="width: 60px;">08:30</div>
+                            <div class="timeline-marker position-relative">
+                                <div class="bg-white border border-2 border-warning rounded-circle"
+                                    style="width: 12px; height: 12px; margin-top: 6px;"></div>
+                                <div class="border-start border-2 position-absolute"
+                                    style="left: 5px; top: 18px; bottom: -30px; height: 100%;"></div>
+                            </div>
+                            <div class="timeline-content pb-2">
+                                <h6 class="fw-bold mb-1">伏见稻荷大社</h6>
+                                <p class="small text-muted mb-0">感受连绵不绝的朱红色千本鸟居。体力好可登山俯瞰京都，时间紧可游览主参道后折返。</p>
+                            </div>
+                        </div>
+
+                        <!-- 10:30 -->
+                        <div class="timeline-item d-flex gap-3 mb-4">
+                            <div class="timeline-time fw-bold text-nowrap" style="width: 60px;">10:30</div>
+                            <div class="timeline-marker position-relative">
+                                <div class="bg-white border border-2 border-warning rounded-circle"
+                                    style="width: 12px; height: 12px; margin-top: 6px;"></div>
+                                <div class="border-start border-2 position-absolute"
+                                    style="left: 5px; top: 18px; bottom: -30px; height: 100%;"></div>
+                            </div>
+                            <div class="timeline-content pb-2">
+                                <h6 class="fw-bold mb-1">清水寺 & 二三年坂</h6>
+                                <p class="small text-muted mb-0">登上清水舞台远眺市区。顺路逛二年坂、三年坂，购买伴手礼，体验最纯正的京都老街氛围。</p>
+                            </div>
+                        </div>
+
+                        <!-- 12:30 -->
+                        <div class="timeline-item d-flex gap-3 mb-4">
+                            <div class="timeline-time fw-bold text-nowrap" style="width: 60px;">12:30</div>
+                            <div class="timeline-marker position-relative">
+                                <div class="bg-white border border-2 border-warning rounded-circle"
+                                    style="width: 12px; height: 12px; margin-top: 6px;"></div>
+                                <div class="border-start border-2 position-absolute"
+                                    style="left: 5px; top: 18px; bottom: -30px; height: 100%;"></div>
+                            </div>
+                            <div class="timeline-content pb-2">
+                                <h6 class="fw-bold mb-1">午餐 & 祇园散步</h6>
+                                <p class="small text-muted mb-0">品尝京都汤豆腐或怀石料理。饭后漫步花见小路，感受传统艺能区的风情，或许能偶遇艺伎。</p>
+                            </div>
+                        </div>
+
+                        <!-- 14:30 -->
+                        <div class="timeline-item d-flex gap-3 mb-4">
+                            <div class="timeline-time fw-bold text-nowrap" style="width: 60px;">14:30</div>
+                            <div class="timeline-marker position-relative">
+                                <div class="bg-white border border-2 border-warning rounded-circle"
+                                    style="width: 12px; height: 12px; margin-top: 6px;"></div>
+                                <div class="border-start border-2 position-absolute"
+                                    style="left: 5px; top: 18px; bottom: -30px; height: 100%;"></div>
+                            </div>
+                            <div class="timeline-content pb-2">
+                                <h6 class="fw-bold mb-1">金阁寺</h6>
+                                <p class="small text-muted mb-0">欣赏“明信片级”的舍利殿倒影。融合枯山水与池泉回游式设计的庭园，四季皆美。</p>
+                            </div>
+                        </div>
+
+                        <!-- 16:30 -->
+                        <div class="timeline-item d-flex gap-3 mb-4">
+                            <div class="timeline-time fw-bold text-nowrap" style="width: 60px;">16:30</div>
+                            <div class="timeline-marker position-relative">
+                                <div class="bg-white border border-2 border-warning rounded-circle"
+                                    style="width: 12px; height: 12px; margin-top: 6px;"></div>
+                                <div class="border-start border-2 position-absolute"
+                                    style="left: 5px; top: 18px; bottom: -30px; height: 100%;"></div>
+                            </div>
+                            <div class="timeline-content pb-2">
+                                <h6 class="fw-bold mb-1">岚山散步</h6>
+                                <p class="small text-muted mb-0">漫步竹林小径，走过渡月桥。傍晚时分光线柔和，非常适合拍照。可顺路品尝抹茶冰淇淋。</p>
+                            </div>
+                        </div>
+
+                        <!-- 18:30 -->
+                        <div class="timeline-item d-flex gap-3">
+                            <div class="timeline-time fw-bold text-nowrap" style="width: 60px;">18:30</div>
+                            <div class="timeline-marker position-relative">
+                                <div class="bg-warning rounded-circle"
+                                    style="width: 12px; height: 12px; margin-top: 6px;"></div>
+                            </div>
+                            <div class="timeline-content pb-2">
+                                <h6 class="fw-bold mb-1">返回大阪</h6>
+                                <p class="small text-muted mb-0">结束即使充实又美好的一天。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery -->
+                    <div class="mt-5">
+                        <h6 class="fw-bold text-secondary mb-3"><i class="bi bi-images text-warning me-2"></i>旅途掠影</h6>
+                        <div class="row g-2">
+                            <div class="col-4 col-sm-3">
+                                <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
+                                    <img src="images/service/kyoto (2).jpg"
+                                        class="img-fluid object-fit-cover hover-zoom" alt="Kyoto Gallery 1">
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-3">
+                                <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
+                                    <img src="images/service/kyoto (4).jpg"
+                                        class="img-fluid object-fit-cover hover-zoom" alt="Kyoto Gallery 2">
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-3">
+                                <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
+                                    <img src="images/service/kyoto (7).jpg"
+                                        class="img-fluid object-fit-cover hover-zoom" alt="Kyoto Gallery 3">
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-3 d-none d-sm-block">
+                                <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
+                                    <img src="images/service/kyoto (12).jpg"
+                                        class="img-fluid object-fit-cover hover-zoom" alt="Kyoto Gallery 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tips -->
+                    <div class="alert alert-warning border-0 bg-warning-subtle mt-5 d-flex gap-3" role="alert">
+                        <div class="fs-4 text-warning"><i class="bi bi-info-circle-fill"></i></div>
+                        <div>
+                            <h6 class="alert-heading fw-bold">实用小贴士</h6>
+                            <ul class="mb-0 small ps-3">
+                                <li class="mb-1"><strong>体力要求：</strong> 行程紧凑，单日步数可能超2万步，请着舒适鞋履。</li>
+                                <li class="mb-1"><strong>门票信息：</strong> 清水寺、金阁寺需购票；伏见稻荷、岚山竹林免费。</li>
+                                <li><strong>季节建议：</strong> 春樱秋叶最美，人潮也最多；夏季推荐清晨出行避暑。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nara & Uji Itinerary -->
+            <div class="card border-0 shadow-lg overflow-hidden rounded-4 mb-5">
+                <div class="card-header p-0 position-relative">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+                    <div class="p-4 p-lg-5 position-relative z-1 text-white"
+                        style="background-image: url('images/service/nara (1).jpg'); background-size: cover; background-position: center;">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 text-shadow">
+                            <div>
+                                <span class="badge bg-success text-white mb-2">自然与历史</span>
+                                <h3 class="mb-0 fw-bold">奈良小鹿 × 宇治抹茶</h3>
+                                <p class="mb-0 text-white opacity-75 small mt-1">亲密接触神鹿 | 探访世界遗产 | 品味正宗抹茶</p>
+                            </div>
+                            <div class="text-end">
+                                <h4 class="mb-0">10小时 / 300km</h4>
+                                <small class="opacity-75">大阪往返</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body p-4 p-lg-5 bg-white">
+                    <!-- Highlights -->
+                    <h5 class="fw-bold text-secondary mb-4"><i class="bi bi-star-fill text-success me-2"></i>行程亮点</h5>
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-4">
+                            <div class="bg-light p-3 rounded-3 h-100 border-start border-4 border-success">
+                                <h6 class="fw-bold">神鹿互动</h6>
+                                <p class="small text-muted mb-0">在奈良公园与1200只野生小鹿亲密互动，感受人与自然的和谐共处。体验喂食鹿仙贝的乐趣。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light p-3 rounded-3 h-100 border-start border-4 border-success">
+                                <h6 class="fw-bold">世界遗产</h6>
+                                <p class="small text-muted mb-0">探访世界最大的木造建筑东大寺与奈良大佛，漫步春日大社千本石灯笼参道，感受千年古都的庄严。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light p-3 rounded-3 h-100 border-start border-4 border-success">
+                                <h6 class="fw-bold">抹茶之乡</h6>
+                                <p class="small text-muted mb-0">在抹茶发源地宇治，打卡10日元硬币上的平等院凤凰堂，品尝最正宗的抹茶甜品，体验极致茶道文化。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline -->
+                    <h5 class="fw-bold text-secondary mb-4"><i class="bi bi-clock-history text-success me-2"></i>参考路线
+                    </h5>
+                    <div class="timeline ps-2">
+                        <!-- 09:00 -->
+                        <div class="timeline-item d-flex gap-3 mb-4">
+                            <div class="timeline-time fw-bold text-nowrap" style="width: 60px;">09:00</div>
+                            <div class="timeline-marker position-relative">
+                                <div class="bg-success rounded-circle"
+                                    style="width: 12px; height: 12px; margin-top: 6px;"></div>
+                                <div class="border-start border-2 position-absolute"
+                                    style="left: 5px; top: 18px; bottom: -30px; height: 100%;"></div>
+                            </div>
+                            <div class="timeline-content pb-2">
+                                <h6 class="fw-bold mb-1">大阪出发 → 奈良公园 & 东大寺</h6>
+                                <p class="small text-muted mb-0">邂逅神使小鹿，购买鹿仙贝互动。瞻仰庄严的奈良大佛(世界最大木造建筑)。</p>
+                            </div>
+                        </div>
+
+                        <!-- 12:00 -->
+                        <div class="timeline-item d-flex gap-3 mb-4">
+                            <div class="timeline-time fw-bold text-nowrap" style="width: 60px;">12:00</div>
+                            <div class="timeline-marker position-relative">
+                                <div class="bg-white border border-2 border-success rounded-circle"
+                                    style="width: 12px; height: 12px; margin-top: 6px;"></div>
+                                <div class="border-start border-2 position-absolute"
+                                    style="left: 5px; top: 18px; bottom: -30px; height: 100%;"></div>
+                            </div>
+                            <div class="timeline-content pb-2">
+                                <h6 class="fw-bold mb-1">春日大社 (午餐)</h6>
+                                <p class="small text-muted mb-0">沿途欣赏原始森林与千本灯笼。这带的小鹿更温顺。午餐推荐奈良特色的柿叶寿司或茶粥。</p>
+                            </div>
+                        </div>
+
+                        <!-- 14:00 -->
+                        <div class="timeline-item d-flex gap-3 mb-4">
+                            <div class="timeline-time fw-bold text-nowrap" style="width: 60px;">14:00</div>
+                            <div class="timeline-marker position-relative">
+                                <div class="bg-white border border-2 border-success rounded-circle"
+                                    style="width: 12px; height: 12px; margin-top: 6px;"></div>
+                                <div class="border-start border-2 position-absolute"
+                                    style="left: 5px; top: 18px; bottom: -30px; height: 100%;"></div>
+                            </div>
+                            <div class="timeline-content pb-2">
+                                <h6 class="fw-bold mb-1">宇治平到院 & 抹茶体验</h6>
+                                <p class="small text-muted mb-0">前往抹茶之乡宇治。打卡10日元硬币背后的平等院凤凰堂。在表参道品尝抹茶冰淇淋、抹茶荞麦面。</p>
+                            </div>
+                        </div>
+
+                        <!-- 17:30 -->
+                        <div class="timeline-item d-flex gap-3">
+                            <div class="timeline-time fw-bold text-nowrap" style="width: 60px;">17:30</div>
+                            <div class="timeline-marker position-relative">
+                                <div class="bg-success rounded-circle"
+                                    style="width: 12px; height: 12px; margin-top: 6px;"></div>
+                            </div>
+                            <div class="timeline-content pb-2">
+                                <h6 class="fw-bold mb-1">返回大阪</h6>
+                                <p class="small text-muted mb-0">预计19:00抵达，建议在道顿堀或心斋桥享用晚餐。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery -->
+                    <div class="mt-5">
+                        <h6 class="fw-bold text-secondary mb-3"><i class="bi bi-images text-success me-2"></i>旅途掠影</h6>
+                        <div class="row g-2">
+                            <div class="col-4 col-sm-3">
+                                <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
+                                    <img src="images/service/nara (2).jpg" class="img-fluid object-fit-cover hover-zoom"
+                                        alt="Nara Gallery 1">
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-3">
+                                <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
+                                    <img src="images/service/nara (3).jpg" class="img-fluid object-fit-cover hover-zoom"
+                                        alt="Nara Gallery 2">
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-3">
+                                <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
+                                    <img src="images/service/nara (5).jpg" class="img-fluid object-fit-cover hover-zoom"
+                                        alt="Nara Gallery 3">
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-3 d-none d-sm-block">
+                                <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
+                                    <img src="images/service/nara (6).jpg" class="img-fluid object-fit-cover hover-zoom"
+                                        alt="Nara Gallery 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tips -->
+                    <div class="alert alert-success border-0 bg-success-subtle mt-5 d-flex gap-3" role="alert">
+                        <div class="fs-4 text-success"><i class="bi bi-info-circle-fill"></i></div>
+                        <div>
+                            <h6 class="alert-heading fw-bold">实用小贴士</h6>
+                            <ul class="mb-0 small ps-3">
+                                <li class="mb-1"><strong>穿着建议：</strong> 奈良公园和春日大社步行较多，建议穿舒适运动鞋。</li>
+                                <li class="mb-1"><strong>美食推荐：</strong> 奈良柿叶寿司、茶粥；宇治必尝抹茶冰淇淋。</li>
+                                <li><strong>小鹿互动：</strong> 喂食时请勿逗弄，喂完后摊手示意，注意安全避免被追逐。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arima Onsen & Outlet Itinerary -->
+            <div class="card border-0 shadow-lg overflow-hidden rounded-4 mb-5">
+                <div class="card-header p-0 position-relative">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+                    <div class="p-4 p-lg-5 position-relative z-1 text-white"
+                        style="background-image: url('images/service/ariba (1).jpg'); background-size: cover; background-position: center;">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 text-shadow">
+                            <div>
+                                <span class="badge bg-info text-white mb-2">疗愈与血拼</span>
+                                <h3 class="mb-0 fw-bold">有马温泉 × 神户三田奥特莱斯</h3>
+                                <p class="mb-0 text-white opacity-75 small mt-1">日本三大名泉金汤 | 关西最大奥莱 | 休闲购物一日游</p>
+                            </div>
+                            <div class="text-end">
+                                <h4 class="mb-0">10小时 / 300km</h4>
+                                <small class="opacity-75">大阪往返</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body p-4 p-lg-5 bg-white">
+                    <!-- Highlights -->
+                    <h5 class="fw-bold text-secondary mb-4"><i class="bi bi-star-fill text-info me-2"></i>行程亮点</h5>
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="bg-light p-3 rounded-3 h-100 border-start border-4 border-info">
+                                <h6 class="fw-bold">千年古汤疗愈</h6>
+                                <p class="small text-muted mb-0">泡日本三大名泉之一“金汤”，富含铁钠的红褐色泉水对神经痛、关节痛有奇效。漫步温泉古街，品尝有马名物。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bg-light p-3 rounded-3 h-100 border-start border-4 border-info">
+                                <h6 class="fw-bold">关西最大奥莱</h6>
+                                <p class="small text-muted mb-0">
+                                    神户三田奥特莱斯拥有220+品牌，Gucci、Prada等奢侈品及日系潮牌常年3-5折。复刻洛杉矶豪宅风格，环境优美。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline -->
+                    <h5 class="fw-bold text-secondary mb-4"><i class="bi bi-clock-history text-info me-2"></i>参考路线</h5>
+                    <div class="timeline ps-2">
+                        <!-- AM -->
+                        <div class="timeline-item d-flex gap-3 mb-4">
+                            <div class="timeline-time fw-bold text-nowrap" style="width: 60px;">上午</div>
+                            <div class="timeline-marker position-relative">
+                                <div class="bg-info rounded-circle" style="width: 12px; height: 12px; margin-top: 6px;">
+                                </div>
+                                <div class="border-start border-2 position-absolute"
+                                    style="left: 5px; top: 18px; bottom: -30px; height: 100%;"></div>
+                            </div>
+                            <div class="timeline-content pb-2">
+                                <h6 class="fw-bold mb-1">大阪出发 → 有马温泉 (金汤)</h6>
+                                <p class="small text-muted mb-0">体验“金汤”泡汤 (成人650日元)。泉水富含矿物质，泡完皮肤滑嫩。外有免费足汤可供小憩。</p>
+                            </div>
+                        </div>
+
+                        <!-- Noon -->
+                        <div class="timeline-item d-flex gap-3 mb-4">
+                            <div class="timeline-time fw-bold text-nowrap" style="width: 60px;">中午</div>
+                            <div class="timeline-marker position-relative">
+                                <div class="bg-white border border-2 border-info rounded-circle"
+                                    style="width: 12px; height: 12px; margin-top: 6px;"></div>
+                                <div class="border-start border-2 position-absolute"
+                                    style="left: 5px; top: 18px; bottom: -30px; height: 100%;"></div>
+                            </div>
+                            <div class="timeline-content pb-2">
+                                <h6 class="fw-bold mb-1">温泉街散步 & 午餐</h6>
+                                <p class="small text-muted mb-0">漫步古街，品尝“有马明石烧”、碳酸仙贝、温泉馒头。选购护手霜等伴手礼。</p>
+                            </div>
+                        </div>
+
+                        <!-- PM -->
+                        <div class="timeline-item d-flex gap-3 mb-4">
+                            <div class="timeline-time fw-bold text-nowrap" style="width: 60px;">下午</div>
+                            <div class="timeline-marker position-relative">
+                                <div class="bg-white border border-2 border-info rounded-circle"
+                                    style="width: 12px; height: 12px; margin-top: 6px;"></div>
+                                <div class="border-start border-2 position-absolute"
+                                    style="left: 5px; top: 18px; bottom: -30px; height: 100%;"></div>
+                            </div>
+                            <div class="timeline-content pb-2">
+                                <h6 class="fw-bold mb-1">神户三田奥特莱斯</h6>
+                                <p class="small text-muted mb-0">关西最大最好逛的奥莱。享受国际大牌与日系品牌的超值折扣。一定要先扫码领电子优惠券！</p>
+                            </div>
+                        </div>
+
+                        <!-- Evening -->
+                        <div class="timeline-item d-flex gap-3">
+                            <div class="timeline-time fw-bold text-nowrap" style="width: 60px;">傍晚</div>
+                            <div class="timeline-marker position-relative">
+                                <div class="bg-info rounded-circle" style="width: 12px; height: 12px; margin-top: 6px;">
+                                </div>
+                            </div>
+                            <div class="timeline-content pb-2">
+                                <h6 class="fw-bold mb-1">返回大阪</h6>
+                                <p class="small text-muted mb-0">带着战利品满意而归。车程约50分钟。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery -->
+                    <div class="mt-5">
+                        <h6 class="fw-bold text-secondary mb-3"><i class="bi bi-images text-info me-2"></i>旅途掠影</h6>
+                        <div class="row g-2">
+                            <div class="col-4 col-sm-3">
+                                <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
+                                    <img src="images/service/ariba (2).jpg"
+                                        class="img-fluid object-fit-cover hover-zoom" alt="Arima Gallery 1">
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-3">
+                                <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
+                                    <img src="images/service/ariba (3).jpg"
+                                        class="img-fluid object-fit-cover hover-zoom" alt="Arima Gallery 2">
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-3">
+                                <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
+                                    <img src="images/service/ariba (5).jpg"
+                                        class="img-fluid object-fit-cover hover-zoom" alt="Arima Gallery 3">
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-3 d-none d-sm-block">
+                                <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
+                                    <img src="images/service/ariba (6).jpg"
+                                        class="img-fluid object-fit-cover hover-zoom" alt="Arima Gallery 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tips -->
+                    <div class="alert alert-info border-0 bg-info-subtle mt-5 d-flex gap-3" role="alert">
+                        <div class="fs-4 text-info"><i class="bi bi-info-circle-fill"></i></div>
+                        <div>
+                            <h6 class="alert-heading fw-bold">实用小贴士</h6>
+                            <ul class="mb-0 small ps-3">
+                                <li class="mb-1"><strong>泡汤准备：</strong> 请自带浴巾和小毛巾（部分设施需租赁）。</li>
+                                <li class="mb-1"><strong>购物攻略：</strong> 到达奥莱先去客服中心或扫码领券，叠加免税更划算。</li>
+                                <li><strong>更多体验：</strong> 若时间充裕，推荐尝试“银汤”或“太阁之汤”体验不同泉质。</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
